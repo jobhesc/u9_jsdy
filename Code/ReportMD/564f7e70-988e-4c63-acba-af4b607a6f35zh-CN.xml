@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ProductBarCodePrintTemplate</Name>
+  <MyName>ProductBarCodePrintTemplate</MyName>
+  <ReportID>1df99fa3-a99f-4ec1-9d27-a404120ce186</ReportID>
+  <RuntimNoPagging>false</RuntimNoPagging>
+  <SetPageRows>false</SetPageRows>
+  <RowNumberOnPage>0</RowNumberOnPage>
+  <Language>zh-CN</Language>
+  <Author>Administrator</Author>
+  <Designer>由系统自动创建的报表模板</Designer>
+  <DynamicMatrixTable />
+  <ReportTemplateID>564f7e70-988e-4c63-acba-af4b607a6f35</ReportTemplateID>
+  <BaseMeasure>Mil</BaseMeasure>
+  <UserMeasure>Mm</UserMeasure>
+  <Width>8190</Width>
+  <PageSet>
+    <CanNotModifiedOnRuntime>false</CanNotModifiedOnRuntime>
+    <Margin>
+      <Left>300</Left>
+      <Right>300</Right>
+      <Top>300</Top>
+      <Bottom>300</Bottom>
+    </Margin>
+    <Height>11690</Height>
+    <Width>8270</Width>
+    <Landscape>false</Landscape>
+    <PaperType>A4</PaperType>
+  </PageSet>
+  <ReportBody name="ReportDetail">
+    <Height>2260</Height>
+    <Hide>false</Hide>
+    <ReportItems>
+      <DataBlocks>
+        <DataBlock name="DataBlock_1">
+          <Location>
+            <Top>260</Top>
+            <Left>260</Left>
+          </Location>
+          <Height>1380</Height>
+          <Width>1740</Width>
+          <ColumnBlocks>3</ColumnBlocks>
+          <RowBlocks>2</RowBlocks>
+          <InnerSpaceHorizontal>40</InnerSpaceHorizontal>
+          <InnerSpaceVertical>40</InnerSpaceVertical>
+          <FrameFixedPrint>true</FrameFixedPrint>
+          <Style>
+            <Background />
+            <Border>
+              <Color>DarkGray,DarkGray,DarkGray,DarkGray,DarkGray</Color>
+            </Border>
+          </Style>
+          <ReportItems>
+            <TextBoxs>
+              <TextBox name="TextBox_1">
+                <Style>
+                  <FormatStyle />
+                  <Front />
+                  <Alignment />
+                  <Background />
+                  <Padding />
+                  <Font>
+                    <Size>24</Size>
+                  </Font>
+                  <Border>
+                    <Color> , , , , </Color>
+                    <Width> , , , , </Width>
+                    <BorderStyleType>None,None,None,None,None</BorderStyleType>
+                  </Border>
+                </Style>
+                <Location>
+                  <Top>120</Top>
+                  <Left>130</Left>
+                </Location>
+                <Width>1500</Width>
+                <Height>480</Height>
+                <Text>=Fields!BarCode.Value</Text>
+                <BarCode>
+                  <TextShowedFlag>false</TextShowedFlag>
+                  <BarCodeType>CODE128</BarCodeType>
+                </BarCode>
+                <IsBookMark>false</IsBookMark>
+              </TextBox>
+              <TextBox name="TextBox_2">
+                <Style>
+                  <FormatStyle />
+                  <Front />
+                  <Alignment />
+                  <Background />
+                  <Padding />
+                  <Font />
+                  <Border>
+                    <Color> , , , , </Color>
+                    <Width> , , , , </Width>
+                    <BorderStyleType>None,None,None,None,None</BorderStyleType>
+                  </Border>
+                </Style>
+                <Location>
+                  <Top>920</Top>
+                  <Left>90</Left>
+                </Location>
+                <Width>1500</Width>
+                <Height>320</Height>
+                <Text>=Fields!ItemCode.Value + "/" + Fields!ItemName.Value</Text>
+                <TextFitType>MutiLinesAndTruncated</TextFitType>
+                <IsBookMark>false</IsBookMark>
+              </TextBox>
+              <TextBox name="TextBox_3">
+                <Style>
+                  <FormatStyle />
+                  <Front />
+                  <Alignment>
+                    <Horizontal>Center</Horizontal>
+                    <Vertical>Top</Vertical>
+                  </Alignment>
+                  <Background />
+                  <Padding />
+                  <Font />
+                  <Border>
+                    <Color> , , , , </Color>
+                    <Width> , , , , </Width>
+                    <BorderStyleType>None,None,None,None,None</BorderStyleType>
+                  </Border>
+                </Style>
+                <Location>
+                  <Top>600</Top>
+                  <Left>130</Left>
+                </Location>
+                <Width>1500</Width>
+                <Height>220</Height>
+                <Text>=Fields!BarCode.Value</Text>
+                <IsBookMark>false</IsBookMark>
+              </TextBox>
+            </TextBoxs>
+          </ReportItems>
+        </DataBlock>
+      </DataBlocks>
+      <Cells />
+    </ReportItems>
+    <Style>
+      <Background />
+    </Style>
+    <Container>DataBlock</Container>
+  </ReportBody>
+  <ReportDataSources>
+    <ReportDataSource name="ds">
+      <ShareDataSource>false</ShareDataSource>
+      <IntegratedSecurity>true</IntegratedSecurity>
+      <ProviderType>UFRPT</ProviderType>
+      <ConnectionString>Data Source=.;Initial Catalog=jsdy;Persist Security Info=True;User ID=sa;Password=ufida123</ConnectionString>
+      <ID>90d5fc5b-5b13-4f74-9be8-4343aba11e15</ID>
+    </ReportDataSource>
+  </ReportDataSources>
+  <ReportDataQuerys>
+    <DataQuery name="dq">
+      <DataSourceName>ds</DataSourceName>
+      <Fields>
+        <Field name="BarCodeID">
+          <FieldName>BarCodeID</FieldName>
+          <DataType>System.Int64</DataType>
+          <DefaultLabel>ID</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>BarCodeID</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="BarCode">
+          <FieldName>BarCode</FieldName>
+          <DefaultLabel>条码</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>BarCode</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="ActualLength">
+          <FieldName>ActualLength</FieldName>
+          <DataType>System.Int32</DataType>
+          <DefaultLabel>实际长度</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>ActualLength</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="MarkingLength">
+          <FieldName>MarkingLength</FieldName>
+          <DataType>System.Int32</DataType>
+          <DefaultLabel>合格证标示长度</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>MarkingLength</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="ItemID">
+          <FieldName>ItemID</FieldName>
+          <DataType>System.Int64</DataType>
+          <DefaultLabel>料品ID</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>ItemID</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="ItemCode">
+          <FieldName>ItemCode</FieldName>
+          <DefaultLabel>料号</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>ItemCode</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="ItemName">
+          <FieldName>ItemName</FieldName>
+          <DefaultLabel>品名</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>ItemName</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="ItemSPECS">
+          <FieldName>ItemSPECS</FieldName>
+          <DefaultLabel>规格</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>ItemSPECS</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="OperatorsID">
+          <FieldName>OperatorsID</FieldName>
+          <DataType>System.Int64</DataType>
+          <DefaultLabel>检验员ID</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>OperatorsID</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="OperatorsCode">
+          <FieldName>OperatorsCode</FieldName>
+          <DefaultLabel>检验员编码</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>OperatorsCode</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+        <Field name="OperatorsName">
+          <FieldName>OperatorsName</FieldName>
+          <DefaultLabel>检验员名称</DefaultLabel>
+          <SubFields />
+          <ReferenceFilterName>OperatorsName</ReferenceFilterName>
+          <BreakColumnByDisplayField>false</BreakColumnByDisplayField>
+        </Field>
+      </Fields>
+      <Command>
+        <CommandText>select barcode.ID as BarCodeID,
+	barcode.BarCode as BarCode,
+	barcode.ActualLength,
+	barcode.MarkingLength,
+	item.ID as ItemID,
+	item.Code as ItemCode,
+	item.Name as ItemName,
+	item.SPECS as ItemSPECS,
+	op.ID as OperatorsID,
+	op.Code as OperatorsCode,
+	opTrl.Name as OperatorsName
+from Cust_ProductBarCode barcode
+inner join CBO_ItemMaster as item on barcode.Item=item.ID
+left join CBO_Operators as op on barcode.Operators=op.ID
+left join CBO_Operators_Trl as opTrl on op.ID=opTrl.ID and opTrl.SysMLFlag='zh-CN'</CommandText>
+        <Identity />
+        <Parameters>
+          <QueryParameter name="@Global_Parameter">
+            <Value>传输全部报表条件...</Value>
+          </QueryParameter>
+        </Parameters>
+      </Command>
+    </DataQuery>
+  </ReportDataQuerys>
+  <Parameters />
+  <EmbeddedImages />
+  <CodeModels />
+</Report>

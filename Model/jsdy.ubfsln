@@ -1,0 +1,13 @@
+<Solution>
+  <SourceControl>
+  </SourceControl>
+  <ItemGroup>
+    <Item id="c6943602-faeb-4f36-bbf6-7b7674b05a41" include="BarCodeBE\BarCodeBE.ubfmlproj" />
+    <Item id="ebf4fde7-c29c-44c0-a747-0de761fddd2c" include="BarCodeUI\BarCodeUI.ubfuiproj" />
+    <Item id="11a02403-5e5e-47ef-898f-1fb0cb1d203b" include="BarCodeQry\BarCodeQry.ubfqueryproj" />
+    <Item id="accafe95-1d8b-405e-8923-258cea4b83ec" include="BarCodeBP\BarCodeBP.ubfbpproj" />
+    <Item id="34687615-e923-462f-b794-b94cf3d56446" include="BarCodeSV\BarCodeSV.ubfserproj" />
+    <Item id="364706a6-78a1-418d-9f38-24b51ab9b739" include="BarCodePrint\BarCodePrint.ubfanproj" />
+  </ItemGroup>
+  <ServiceGroupInfo id="107c97dc-f6e9-4b40-80b4-cc43df0594b4" name="jsdy" displayName="jsdy" description="" help="" fullPath="C:\yonyou\UBFV50\Unsigned\jsdy\Model\jsdy.ubfsln" applicationID="" />
+</Solution>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<pub-sub>
+  <!--退回处理单更新后插件-->
+  <subcription event="UFIDA.U9.SM.RMA.RMA.AfterUpdated">
+    <subscriber  type="UFIDA.U9.Cust.JSDY.BarCodeAppPlugIn.RMAAfterUpdated,UFIDA.U9.Cust.JSDY.BarCodeAppPlugIn.dll" />
+  </subcription>
+</pub-sub>

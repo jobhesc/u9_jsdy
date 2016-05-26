@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project id="87ea3eae-ed24-48c5-b5d8-d3c3d38cd031" name="BarCodePrint" displayName="BarCodePrint" description="" help="" type="RPT" assemblyName="BarCodePrint" mapProject="" resourceName="" projectVersion="Normal">
+  <SourceControl />
+  <ItemGroup>
+    <Item id="3a2862fa-733c-484b-95ef-b63acbba5456" name="CompleteApplyBarCodePrintTemplate.urdl" displayName="CompleteApplyBarCodePrintTemplate.urdl" description="" help="" include="CompleteApplyBarCodePrintTemplate.urdl" type="" />
+    <Item id="34acc4fe-86d0-4328-98c7-4cce13c40d0c" name="ProductBarCodePrintTemplate.urdl" displayName="ProductBarCodePrintTemplate.urdl" description="" help="" include="ProductBarCodePrintTemplate.urdl" type="" />
+  </ItemGroup>
+</Project>

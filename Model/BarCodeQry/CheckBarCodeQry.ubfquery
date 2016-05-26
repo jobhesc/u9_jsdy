@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QueryComponent id="ba1c0f3b-c1d6-4405-a625-fac3920ad312" name="CheckBarCodeQry" displayName="CheckBarCodeQry" description="" help="" QueryType="List" QueryURI="05c71af3-17ec-47d7-a889-27e60df5a5b7" QuerySourceFullName="UFIDA.U9.Cust.JSDY.BarCode.CheckBarCode" UIViewDragType="DragUp" RefInfoLoadType="Cache">
+  <BasicInfo id="c0d5e2d1-61fb-4cc4-b489-c3a6d9e29298" name="" displayName="" description="" help="" RefToken="" RootDescContextValue="" FilterTabVisible="True" ColumnTabVisible="True" SortTabVisible="True" FilterExpandLevel="3" ColumnExpandLevel="3" SortExpandLevel="3" />
+  <BPRefInfo id="913e13c5-700b-4f30-a839-b4bf2280f492" name="" displayName="" description="" help="" ProjectID="" ProjectPath="" BPItemID="" BPOperationID="" DTOID="" BPAgentDll="" BPAgentProxy="" />
+  <UIRefInfo id="f0670589-6d4e-407a-b6a7-1caee95b7ab3" name="" displayName="" description="" help="" ProjectID="" ProjectPath="" UIModelItemID="054d8daa-5d34-44bb-8ec0-c58e7bc19a2f" UIFormItemID="12158ab9-4822-482d-a6b5-b0a08034568a" UIModelID="d4fb6df2-126b-48f9-b10d-69494790490b" />
+  <DefaultCase>
+    <BasicFilters>
+      <BasicFilter id="1779734d-b81b-4214-9eaa-b4f809b1d425" name="BarCode" displayName="条码" description="" help="" />
+      <BasicFilter id="c8286d05-d4ff-449b-bb97-861a05d76395" name="Item" displayName="料品" description="" help="" />
+    </BasicFilters>
+    <DefaultColumns>
+      <Column id="0da86426-0024-417c-bae6-3c316da24b06" name="BarCode" displayName="条码" description="" help="" />
+      <Column id="914395d0-2653-4126-9cdd-b610213804c9" name="Item.Code" displayName="料号" description="" help="" />
+      <Column id="7e00474d-9003-4d00-b613-2f9b4b8c0ff7" name="Item.Name" displayName="品名" description="" help="" />
+      <Column id="d476bbed-1fb6-4387-9930-1815937353a5" name="ActualLength" displayName="实际长度" description="" help="" />
+      <Column id="1ff678fc-5027-46f3-825a-be38f0e77bfc" name="CheckedOn" displayName="盘点时间" description="" help="" />
+      <Column id="d972fa6f-68b7-4ed2-bbd8-6cfcc08b8b11" name="CheckedBy" displayName="盘点人" description="" help="" />
+    </DefaultColumns>
+  </DefaultCase>
+</QueryComponent>

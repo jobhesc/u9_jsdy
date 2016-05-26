@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIModelComponent id="bc748c0d-9346-41e2-b027-90652854d0a7" name="ProductBarCodeBListUIModel" displayName="ProductBarCodeBListUIModel" description="" help="">
+  <UIModels>
+    <UIModel id="fe92083f-7196-4a16-83de-16d3224fdd23" name="ProductBarCodeBListUIModel" displayName="ProductBarCodeBListUIModel" description="" help="" Namespace="UFIDA.U9.Cust.JSDY.ProductBarCodeBListUIModel" QueryInfo="7b0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28
+995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8ifo1f89f4NX6N/5se/MTz
+6+GXv/+3evx7vFuU6WVeN0W1/Oyj3fHOR2m+nFazYnnx2Ufr9nz74KPf4+jxT6zz+vqkWqyqZb5s
+02L22Uf7s9mn9+4d3N+ezvJPt/cPzvPtg/uT+9v3zj+d7e9mn+5n9/Y+SpfZIv/so5d1NVtP2ydZ
+fVLN8p+orz9KZ0WzKrPrF4Pf5820LlYto/VROs/LFX4yIm+uV/TS86Jp9YOvXp199tHO/fN79+9N
+JtvT83s5IZTvb2fTnXz74fnuzr0Hn84+3f90ou1fV+t6mj9bl6X0/9Wzs6fH468ejk/WTTv+zuun
+v89YcRmHqH2UfnX2k0V+9bTOLgQL/PbV6qP0VX5+tjyvnlfZTL44yabz/KOjx0+yppjiK6ZadrB/
+kD2cTbfv3Z+db+/PDva3J/fOz7cf7uznk929fOfT3fuGah0iDdKEun5Tvc35s1dV1T6lZifVss3f
+tT+ZlWt+9VlRtnn9Jpv8ZNEUk5I+e1OvaTgnVbleLPufv67qtv+pQDl9t8qWs+f5ZV5+9tE9A6P7
+KSB0P7tL5HiplGJy7GR7B7PJw93tycGn+9v7Ow8ebmf7D2ZEnfv79/K98/MH+5aJbksOmrGfzqft
+2VPvj5dZO8efT16etflCvnry8stVXmd4XT54+uZL883xBbH507L0/iJI767xNw3iqzN/ENl0unN/
+98Hudp7t723v3z+nOf303oPt8+mD++f37+2fnx9k3+Qgvjr7glixNCP5dPLpp7Pzhw+2ZzsPptv7
+n356bzv79P6n2zvZ7Px+/nAyJc7CS8+qemHemX16PnnwgDhwd7I3AcoH29nk0wfbBw8ekjg/3Nmd
+PXjoOqIXzvOHezsH9863H+w+JGnPdj/dPrg3y7d3P53d29vbP5/N9mR+n+bn2bpsT7ImV94XpmmC
+v0SDZNnu9PzT6fZk595DIJ5vZ9Tv9vm9Tyfn093d/cmnB4ZuVv4C8v0Xf/5f/F/+RX/wIBHv9vs8
+vzd5cPBwurN9b7azSwOfzEj0Hk63H+49fDD99MGD873JvukTxOp2+Gf82f/5n7qxw7vhmA05WETo
+b/mFUdndne3sTXYn27uz3YPt/b0DIsTBAyLp7OHk3qf57nRvZ/Khw/e6e7h7b4/0zcPt6d7DGanH
++zTl9+8dbO/t5Q8/3T3PZg/3p/7Ix7EOafh/4t95yw7vn+/ef7Cf7W/vzIhv9ndns+1JRh1+uk+k
+35t++vDh+SzoEH10OiRi/+d/0h9/yw53soN7+/cmB9sH08kDUibTyfbk/N7u9vne3v3Jg4wYe8eO
+8HjarrPyeb68aOfdPv+Gv+C//rP/8P/6T/8H//O/56+4Zc8PJsQ49w8+3X6wc59Mz9692XZGkrR9
+MMn2Z/newfm9/Qem5y+y+i0Z13jXf9If9V/8RX/ff/U3/sH/xV/0R/6Xf9nf8144TO89JOkhQT7Y
+u09qYJdM8eThA5rfLNvJ93c+nWQ7Dw0OoviquolO8l/6B/3Xf80f95//yX/Wf/n3/Rm3Z6/swWR2
+ntMc33+4S+y18+nD7YdTQuR+fkBewsOM1Lo1bK+n2fLLZbfbP/qv/S/+xD/xv/gz/47/+s/8227Z
+58P7n+aT/fMH258e7OzA4mcQ5k+3H852Hp5/uj+Z7eVWgaDPJ12/Q/r8z/6ev+eWHe7v7B7MPt2Z
+bu+S7tomvXpOmn6H/jnfmWR7e5/u7O9ZkX1ZF2SCZ5Fx/qn/+R//N73XOEm9T88nB6TX75O/sH9v
+OiPlO5luP5juf3p+f7b/MDu3Sku7jQwV3d4w1LtddWU/YHV+N3QDj37DX+NHz4+eHz0/en70/L/8
++X8A" UseType="ForQuery">
+      <UIModelInfos>
+        <UIModelInfo id="f0d04502-bda1-416f-9d25-93269b2b481a" name="ProductBarCodeBListUIModel" displayName="ProductBarCodeBListUIModel" description="" help="" FullName="ProductBarCodeBListUIModel" DataTypeID="" MappingID="" MappingName="" IsMap="False">
+          <UIModelInfo id="2b034a5a-8bb5-48eb-8ae5-92b288b2e130" name="QueryView" displayName="QueryView" description="" help="" FullName="ProductBarCodeBListUIModel.QueryView" DataTypeID="99d2cd93-1e55-468d-a70a-7b330c1956d5" MappingID="" MappingName="" IsMap="False">
+            <UIModelInfo id="d7d946d0-d70c-43e2-98b3-89fee77da60b" name="ID" displayName="ID" description="" help="" FullName="ProductBarCodeBListUIModel.QueryView.ID" DataTypeID="ba391065-6c27-4c82-acc8-b52b1c93a910" MappingID="" MappingName="" IsMap="False" />
+          </UIModelInfo>
+          <UIModelInfo id="fcb94d7c-0cf6-424f-9a3d-65828a1df729" name="ProductBarCode" displayName="ProductBarCode" description="" help="" FullName="ProductBarCodeBListUIModel.ProductBarCode" DataTypeID="9e52c94a-0f05-480b-abfe-240153a47f96" MappingID="" MappingName="UFIDA::U9::Cust::JSDY::BarCode::ProductBarCode" IsMap="True">
+            <UIModelInfo id="c0f7c3cf-e012-418f-b835-73717281e1fb" name="ID" displayName="ID" description="" help="" FullName="ProductBarCodeBListUIModel.ProductBarCode.ID" DataTypeID="ba391065-6c27-4c82-acc8-b52b1c93a910" MappingID="7f5f9f2a-ef97-4ea7-94f3-fb67533a4a3c" MappingName="ID" IsMap="True" />
+          </UIModelInfo>
+        </UIModelInfo>
+      </UIModelInfos>
+      <Views>
+        <UIViewInfo id="f1c38348-3c2d-4f56-bce1-7a5f4141b35f" name="ProductBarCode" displayName="成品条码档案" description="" RootFullName="ProductBarCodeBListUIModel.ProductBarCode">
+          <Groups>
+            <Group id="45bdfb1e-0e02-4312-b3d4-8aa1e37757e0" name="Key" displayName="Key" description="" help="" />
+            <Group id="bc360037-ae74-4b4a-92b3-3922811b74dc" name="Misc" displayName="Misc" description="" help="" />
+          </Groups>
+          <Fields>
+            <UIFieldInfo id="2480b225-72aa-4bf2-be3a-ce339f41808c" name="ID" displayName="ID" description="" DefaultValue="" GroupName="Key" DisplayRule="19.0" IsNullable="False" IsReadOnly="False" IsEnableReference="False" IsLink="False" ControlID="68095607-50d1-4296-a35a-623b21d654f1" DataTypeID="ba391065-6c27-4c82-acc8-b52b1c93a910" EnumTypeID="" BindingFullName="ProductBarCodeBListUIModel.ProductBarCode.ID" Expression="" Sequence="0" Length="8" IsBinding="False" IsGlobalized="False" CustomIsLoadable="False" CustomAttrName="" />
+          </Fields>
+        </UIViewInfo>
+      </Views>
+      <ActionGroups>
+        <Group id="df3e09f7-5fb5-4c97-875f-fbd0e653802a" name="Case" displayName="Case" description="" help="" />
+      </ActionGroups>
+      <Actions>
+        <UIActionInfo id="ec992ce7-5a2c-4b1e-9a8a-24dd4419374e" name="OnLookCase" displayName="查询" description="" help="" CodeTemplate=".\UITpls\UICommonAction.tpl" TemplateParameter="QryClick" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+        <UIActionInfo id="f21f3093-0bc8-478e-a189-5742f0145a5c" name="OnCaseChanged" displayName="改变方案" description="" help="" CodeTemplate="" TemplateParameter="" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+        <UIActionInfo id="f38fc3dd-d883-4c21-95f6-09896c0d38bf" name="OnOutPut" displayName="输出" description="" help="" CodeTemplate=".\UITpls\UICommonAction.tpl" TemplateParameter="OnOutPut" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+        <UIActionInfo id="05fb0362-bd94-46d0-98e7-453db9fcaedf" name="OnPrint" displayName="打印" description="" help="" CodeTemplate=".\UITpls\UICommonAction.tpl" TemplateParameter="OnPrint" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+        <UIActionInfo id="71efda47-d8b8-429e-b9c5-016c5d75bd17" name="OnDelete" displayName="删除" description="" help="" CodeTemplate=".\UITpls\UICommonAction.tpl" TemplateParameter="ListDeleteClick" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+        <UIActionInfo id="0feb9305-b5bd-4132-a8ee-d507b1293287" name="OnPrintBarCode" displayName="打印条码" description="" help="" CodeTemplate="" TemplateParameter="" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+      </Actions>
+    </UIModel>
+  </UIModels>
+</UIModelComponent>

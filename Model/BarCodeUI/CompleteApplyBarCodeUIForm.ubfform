@@ -1,0 +1,212 @@
+<View ID="11b5454e-5e56-4c3e-9f96-e30a4f194977" ChildLabelWidth="56" ChildRefWidth="20" DisplayName="完工申报条码生成" DisplayNameIndexStr="" DisplayNameResourceID="" DisplaySrcType="Custom" DisplaySrcUIFieldID="" DisplaySrcUIViewID="" GridBottomMargin="10" GridColumnCount="1" GridColumnSpace="0" GridLeftMargin="10" GridRightMargin="10" GridRowCount="2" GridRowSpace="10" GridTopMargin="10" Height="375" IsMainForm="True" LayoutType="GridBag" Name="CompleteApplyBarCodeUIForm" Namespace="UFIDA.U9.Cust.JSDY.CompleteApplyBarCodeUIModel" TabStop="False" TemplateCode="UI_ModalFormThreeColumns" TemplateType="CustomTemplate" UIModelID="947d8be5-0d6b-43c7-a816-d26b62e5bfc3" URI=".UI_弹出Form_3列WebPart" ViewID="4983" Width="630" X="10" Y="10">
+  <Columns>
+    <Column Fixed="True" Name="Column0" Type="Title" Width="610" />
+  </Columns>
+  <Rows>
+    <Row Fixed="True" Height="320" Name="Row0" />
+    <Row Fixed="True" Height="25" Name="Row1" />
+  </Rows>
+  <Providers />
+  <InParameters />
+  <Card ID="f82a324a-3b73-423d-b19b-f1206fa61340" ChildLabelWidth="60" ChildRefWidth="20" GridBottomMargin="0" GridColumnCount="7" GridColumnSpace="0" GridHeight="1" GridLeftMargin="0" GridRightMargin="0" GridRowCount="13" GridRowSpace="5" GridTopMargin="0" GridWidth="1" GridX="0" GridY="0" Height="320" LayoutType="GridBag" Name="Card0" TabIndex="1" TabStop="False" Width="610" X="10" Y="10">
+    <Columns>
+      <Column Fixed="True" Name="Column0" Type="Title" Width="120" />
+      <Column Fixed="True" Name="Column5" Type="Spacing" Width="5" />
+      <Column Fixed="True" Name="Column1" Width="170" />
+      <Column Fixed="True" Name="Column2" Type="Spacing" Width="20" />
+      <Column Fixed="True" Name="Column3" Type="Title" Width="120" />
+      <Column Fixed="True" Name="Column6" Type="Spacing" Width="5" />
+      <Column Fixed="True" Name="Column4" Width="170" />
+    </Columns>
+    <Rows>
+      <Row Fixed="True" Height="20" Name="Row0" />
+      <Row Fixed="True" Height="20" Name="Row1" />
+      <Row Fixed="True" Height="20" Name="Row2" />
+      <Row Fixed="True" Height="20" Name="Row3" />
+      <Row Fixed="True" Height="20" Name="Row4" />
+      <Row Fixed="True" Height="20" Name="Row5" />
+      <Row Fixed="True" Height="20" Name="Row6" />
+      <Row Fixed="True" Height="20" Name="Row7" />
+      <Row Fixed="True" Height="20" Name="Row8" />
+      <Row Fixed="True" Height="20" Name="Row9" />
+      <Row Fixed="True" Height="20" Name="Row10" />
+      <Row Fixed="True" Height="20" Name="Row11" />
+      <Row Fixed="True" Height="20" Name="Row12" />
+    </Rows>
+    <Label ID="49d1d1bf-cdee-4491-a62a-032e1bbc0a66" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="0" Height="20" IsNull="True" IsSequence="False" Name="lblID113" RelationControl="ID113" TabIndex="1" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="False" Width="90" X="0" Y="25">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <NumberControl ID="60403483-1984-4b1d-9a5b-846d2b571241" DisplayFormat="19.0" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="0" Height="20" IsNull="False" IsProperty="False" IsSequence="True" MultiLine="False" Name="ID113" RelationControl="lblID113" TabIndex="2" TabStop="True" TextAlign="Right" TitleAlign="Left" TitleLocation="Left" UIFieldID="ID" UIViewID="CompleteApplyBarCode" Visible="False" Width="90" X="95" Y="25">
+      <Events />
+      <RelationControls />
+      <PrecisionBind Name="PrecisionBind0" />
+      <RoundRuleBind Name="RoundRuleBind0" />
+      <ValueOfRoundByValueBind Name="ValueOfRoundByValueBind0" />
+      <CurrencyType Name="CurrencyType0" />
+    </NumberControl>
+    <Label ID="7cc1b455-0384-444d-908a-aa92cf644d0c" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="0" Height="20" IsNull="True" IsSequence="False" Name="lblSysVersion101" RelationControl="SysVersion101" TabIndex="3" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="False" Width="90" X="0" Y="50">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <NumberControl ID="155186a0-6d52-46ca-a1cd-b4f629a1d59d" DisplayFormat="19.0" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="0" Height="20" IsNull="True" IsProperty="False" IsSequence="False" MultiLine="False" Name="SysVersion101" RelationControl="lblSysVersion101" TabIndex="4" TabStop="True" TextAlign="Right" TitleAlign="Left" TitleLocation="Left" UIFieldID="SysVersion" UIViewID="CompleteApplyBarCode" Visible="False" Width="90" X="95" Y="50">
+      <Events />
+      <RelationControls />
+      <PrecisionBind Name="PrecisionBind1" />
+      <RoundRuleBind Name="RoundRuleBind1" />
+      <ValueOfRoundByValueBind Name="ValueOfRoundByValueBind1" />
+      <CurrencyType Name="CurrencyType1" />
+    </NumberControl>
+    <Label ID="85f92e21-c486-4e11-ab91-2147e795ed67" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="0" Height="20" IsNull="True" IsSequence="False" Name="lblItem578" RelationControl="Item578" TabIndex="5" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <Reference ID="f21bde16-8b0a-433c-959e-55e4a681d418" CodeAttributeName="Code" CodeField="Code" CodeFieldUIFieldID="Item_Code" CodeFieldUIViewID="CompleteApplyBarCode" DisplayFormat="19.0" Enabled="True" EntityName="ID" GridHeight="1" GridWidth="1" GridX="2" GridY="0" Height="20" IsNull="False" IsProperty="False" IsSequence="False" Name="Item578" NameAttributeName="Code" NameFieldUIFieldID="Item_Code" NameFieldUIViewID="CompleteApplyBarCode" PkeyField="ID" RefType="b2ccf05d-c424-4574-af1c-469aa085f418" RelationControl="lblItem578" TabIndex="13" TabStop="True" TextAlign="Right" TitleAlign="Left" TitleLocation="Left" UIFieldID="Item" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" WindowHeight="408" WindowWidth="580" X="125" Y="0">
+      <Events />
+      <RelationControls />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="ID" ColumnID="ID" TargetControlType="" TargetID="" TargetProperty="" />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="料号" ColumnID="Code" TargetControlType="" TargetID="" TargetProperty="" />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="品名" ColumnID="Name" TargetControlType="TextBoxModel" TargetID="Item_Name94" TargetProperty="Value" />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="规格" ColumnID="SPECS" TargetControlType="TextBoxModel" TargetID="Item_SPECS155" TargetProperty="Value" />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="检验标准" ColumnID="DescFlexField_PrivateDescSeg1" TargetControlType="TextBoxModel" TargetID="Item_DescFlexField_PrivateDescSeg1124" TargetProperty="Value" />
+      <RefNameFields>
+        <RefNameField UIFieldID="Code" />
+      </RefNameFields>
+      <UIFilterBar Name="ReferenceFilter" />
+      <Events />
+    </Reference>
+    <Label ID="edaef245-3b0d-46f3-a758-3beac5e6557b" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="1" Height="20" IsNull="True" IsSequence="False" Name="lblItem_Name94" RelationControl="Item_Name94" TabIndex="6" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120" X="0" Y="25">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <TextBox ID="b22874e4-e48e-42fa-a7f3-11bafa9e0e6f" DisplayFormat="255" Enabled="True" GridHeight="1" GridWidth="1" GridX="2" GridY="1" Height="20" IsNull="False" IsProperty="False" IsSequence="False" MultiLine="False" Name="Item_Name94" ReadOnly="True" RelationControl="lblItem_Name94" TabIndex="14" TabStop="True" TextAlign="Left" TitleAlign="Left" TitleLocation="Left" UIFieldID="Item_Name" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" X="125" Y="25">
+      <Events />
+      <RelationControls />
+    </TextBox>
+    <Label ID="81ff97b5-ff58-4095-aca4-556ff9d661da" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="2" Height="20" IsNull="True" IsSequence="False" Name="lblItem_SPECS155" RelationControl="Item_SPECS155" TabIndex="7" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120" X="0" Y="50">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <TextBox ID="7ab1f2d3-38da-4bd5-aa7b-7738ec2f90fe" DisplayFormat="300" Enabled="True" GridHeight="1" GridWidth="1" GridX="2" GridY="2" Height="20" IsNull="True" IsProperty="False" IsSequence="False" MultiLine="False" Name="Item_SPECS155" ReadOnly="True" RelationControl="lblItem_SPECS155" TabIndex="15" TabStop="True" TextAlign="Left" TitleAlign="Left" TitleLocation="Left" UIFieldID="Item_SPECS" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" X="125" Y="50">
+      <Events />
+      <RelationControls />
+    </TextBox>
+    <Label ID="3a1dd517-ad64-4d07-8063-11e575f6bd0a" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="3" Height="20" IsNull="True" IsSequence="False" Name="lblItem_DescFlexField_PrivateDescSeg1124" RelationControl="Item_DescFlexField_PrivateDescSeg1124" TabIndex="8" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120" X="0" Y="75">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <TextBox ID="1f23231b-4192-49eb-829b-2169e5f9375d" DisplayFormat="1000" Enabled="True" GridHeight="1" GridWidth="1" GridX="2" GridY="3" Height="20" IsNull="True" IsProperty="False" IsSequence="False" MultiLine="False" Name="Item_DescFlexField_PrivateDescSeg1124" ReadOnly="True" RelationControl="lblItem_DescFlexField_PrivateDescSeg1124" TabIndex="16" TabStop="True" TextAlign="Left" TitleAlign="Left" TitleLocation="Left" UIFieldID="Item_DescFlexField_PrivateDescSeg1" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" X="125" Y="75">
+      <Events />
+      <RelationControls />
+    </TextBox>
+    <Label ID="0c5abdde-f770-4803-a170-bacd2ca6acad" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="4" Height="20" IsNull="True" IsSequence="False" Name="lblActualLength118" RelationControl="ActualLength118" TabIndex="9" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120" X="0" Y="100">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <NumberControl ID="81126926-b5c8-47c9-949c-3f049a6f9838" DisplayFormat="10.0" Enabled="True" GridHeight="1" GridWidth="1" GridX="2" GridY="4" Height="20" IsNull="False" IsProperty="False" IsSequence="False" MultiLine="False" Name="ActualLength118" RelationControl="lblActualLength118" TabIndex="17" TabStop="True" TextAlign="Right" TitleAlign="Left" TitleLocation="Left" UIFieldID="ActualLength" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" X="125" Y="100">
+      <Events />
+      <RelationControls />
+      <PrecisionBind Name="PrecisionBind2" />
+      <RoundRuleBind Name="RoundRuleBind2" />
+      <ValueOfRoundByValueBind Name="ValueOfRoundByValueBind2" />
+      <CurrencyType Name="CurrencyType2" />
+    </NumberControl>
+    <Label ID="f32bd1be-e86f-4bdf-a079-afb8bd192e4b" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="5" Height="20" IsNull="True" IsSequence="False" Name="lblBusinessDate110" RelationControl="BusinessDate110" TabIndex="10" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120" X="0" Y="125">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <DatePicker ID="68c975ff-fb64-434a-ac0b-cbb20427f2af" DisplayFormat="10" Enabled="True" GridHeight="1" GridWidth="1" GridX="2" GridY="5" Height="20" IsNull="False" IsProperty="False" IsSequence="False" Name="BusinessDate110" RelationControl="lblBusinessDate110" TabIndex="18" TabStop="True" TitleAlign="Left" TitleLocation="Left" UIFieldID="BusinessDate" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" X="125" Y="125">
+      <Events />
+      <RelationControls />
+    </DatePicker>
+    <Label ID="2012b706-7851-4826-aef4-b098cca94d7f" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="7" Height="20" IsNull="True" IsSequence="False" Name="lblQty116" RelationControl="Qty116" TabIndex="12" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120" X="0" Y="175">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <NumberControl ID="d3eaf2d5-4c95-4588-8749-68118fe73a45" DisplayFormat="10.0" Enabled="True" GridHeight="1" GridWidth="1" GridX="2" GridY="7" Height="20" IsNull="True" IsProperty="False" IsSequence="False" MultiLine="False" Name="Qty116" ReadOnly="False" RelationControl="lblQty116" TabIndex="20" TabStop="True" TextAlign="Right" TitleAlign="Left" TitleLocation="Left" UIFieldID="Qty" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" X="125" Y="175">
+      <Events />
+      <RelationControls />
+      <PrecisionBind Name="PrecisionBind3" />
+      <RoundRuleBind Name="RoundRuleBind3" />
+      <ValueOfRoundByValueBind Name="ValueOfRoundByValueBind3" />
+      <CurrencyType Name="CurrencyType3" />
+    </NumberControl>
+    <Label ID="c264c1b4-eed2-49d0-9674-7989772aba01" Enabled="True" GridHeight="1" GridWidth="1" GridX="4" GridY="0" Height="20" IsNull="True" IsSequence="False" Name="lblOperators118" RelationControl="Operators118" TabIndex="21" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120" X="315" Y="0">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <Reference ID="2a5b2d94-50fa-413a-a8e1-0694f4bb77b6" CodeAttributeName="Code" CodeField="Code" CodeFieldUIFieldID="Operators_Code" CodeFieldUIViewID="CompleteApplyBarCode" DisplayFormat="19.0" Enabled="True" EntityName="ID" GridHeight="1" GridWidth="1" GridX="6" GridY="0" Height="20" IsNull="False" IsProperty="False" IsSequence="False" Name="Operators118" NameAttributeName="Name" NameFieldUIFieldID="Operators_Name" NameFieldUIViewID="CompleteApplyBarCode" PkeyField="ID" ReadOnly="False" RefType="e295a02e-32f3-44c1-9648-b2c189a2f18c" RelationControl="lblOperators118" TabIndex="23" TabStop="True" TextAlign="Right" TitleAlign="Left" TitleLocation="Left" UIFieldID="Operators" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" WindowHeight="408" WindowWidth="580" X="440" Y="0">
+      <Events />
+      <RelationControls />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="ID" ColumnID="ID" TargetControlType="" TargetID="" TargetProperty="" />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="编码" ColumnID="Code" TargetControlType="" TargetID="" TargetProperty="" />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="名称" ColumnID="Name" TargetControlType="" TargetID="" TargetProperty="" />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="部门编码" ColumnID="Dept_Code" TargetControlType="" TargetID="" TargetProperty="" />
+      <ReferenceRelation Action="Clear" ColumnDisplayName="部门名称" ColumnID="Dept_Name" TargetControlType="" TargetID="" TargetProperty="" />
+      <RefNameFields>
+        <RefNameField UIFieldID="Name" />
+      </RefNameFields>
+      <UIFilterBar Name="ReferenceFilter" />
+      <Events />
+    </Reference>
+    <Label ID="4a70e2b6-5034-4632-9b6d-545f463f2f1a" Enabled="True" GridHeight="1" GridWidth="1" GridX="4" GridY="1" Height="20" IsNull="True" IsSequence="False" Name="lblMemo164" RelationControl="Memo164" TabIndex="22" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120" X="315" Y="25">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <TextBox ID="6e13d719-f535-4e29-8022-ee3605fbb226" DisplayFormat="1000" Enabled="True" GridHeight="3" GridWidth="1" GridX="6" GridY="1" Height="70" IsNull="True" IsProperty="False" IsSequence="False" MultiLine="True" Name="Memo164" RelationControl="lblMemo164" TabIndex="24" TabStop="True" TextAlign="Left" TextBoxMode="MultiLine" TitleAlign="Left" TitleLocation="Left" UIFieldID="Memo" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" X="440" Y="25">
+      <Events />
+      <RelationControls />
+    </TextBox>
+    <FlexFieldPicker ID="c369a74d-e20e-4c52-ac65-3aee8544352f" Enabled="True" FlexFieldType="Description" GridHeight="1" GridWidth="1" GridX="6" GridY="4" HasBorder="False" Height="20" IsNull="True" Name="FlexFieldPicker0" TabIndex="25" TabStop="True" TitleAlign="Left" TitleLocation="Left" Visible="True" Width="170" X="440" Y="100">
+      <Events />
+      <RelationControls />
+    </FlexFieldPicker>
+    <Label ID="0146faeb-02c2-4895-8229-a522011104a9" Enabled="True" GridHeight="1" GridWidth="1" GridX="0" GridY="6" Height="20" IsNull="True" IsSequence="False" Name="lblIsPrintWrapper238" RelationControl="IsPrintWrapper238" TabIndex="25" TabStop="True" TitleAlign="Right" TitleLocation="Left" UIFieldID="" UIViewID="" Visible="True" Width="120" X="0" Y="150">
+      <Events />
+      <RelationControls />
+      <Events />
+    </Label>
+    <CheckBox ID="ed6ea009-7f28-4128-a3af-e08283918055" DisplayFormat="1" Enabled="True" GridHeight="1" GridWidth="1" GridX="2" GridY="6" Height="20" IsNull="True" IsProperty="False" IsSequence="False" Name="IsPrintWrapper238" RelationControl="lblIsPrintWrapper238" TabIndex="26" TabStop="True" TitleAlign="Left" TitleLocation="Left" UIFieldID="IsPrintWrapper" UIViewID="CompleteApplyBarCode" Visible="True" Width="170" X="125" Y="150">
+      <Events />
+      <RelationControls />
+    </CheckBox>
+  </Card>
+  <Card ID="925602a0-a0fe-4e90-8628-d8f18877e337" ChildLabelWidth="60" ChildRefWidth="20" FunctionBar="FunctionBar" GridBottomMargin="0" GridColumnCount="11" GridColumnSpace="0" GridHeight="1" GridLeftMargin="0" GridRightMargin="10" GridRowCount="1" GridRowSpace="0" GridTopMargin="0" GridWidth="1" GridX="0" GridY="1" Height="25" LayoutType="GridBag" Name="Card1" TabIndex="2" TabStop="False" Width="610" X="10" Y="340">
+    <Columns>
+      <Column Fixed="True" Name="Column10" Type="Spacing" Width="80" />
+      <Column Fixed="True" Name="Column9" Type="Spacing" Width="10" />
+      <Column Fixed="True" Name="Column8" Type="Spacing" Width="80" />
+      <Column Fixed="True" Name="Column7" Type="Spacing" Width="10" />
+      <Column Fixed="True" Name="Column6" Type="Spacing" Width="80" />
+      <Column Fixed="True" Name="Column0" Type="Value" Width="60" />
+      <Column Fixed="True" Name="Column1" Type="Spacing" Width="80" />
+      <Column Fixed="True" Name="Column2" Type="Spacing" Width="30" />
+      <Column Fixed="True" Name="Column3" Type="Spacing" Width="80" />
+      <Column Fixed="True" Name="Column4" Type="Spacing" Width="10" />
+      <Column Fixed="True" Name="Column5" Type="Spacing" Width="80" />
+    </Columns>
+    <Rows>
+      <Row Fixed="True" Height="20" Name="Row0" />
+    </Rows>
+    <Button ID="cfd220b2-5b20-409a-abb7-7fa3520a88e5" DisplayName="" DisplayNameIndexStr="1" DisplayNameResourceID="020a5365-8f12-4970-b8df-17ce3ae60a68" DisplaySrcType="PublicResource" DisplaySrcUIFieldID="OnBtnClose" DisplaySrcUIViewID="ResourceView" GridHeight="1" GridWidth="1" GridX="10" GridY="0" Height="20" Name="BtnClose" TabIndex="2" TabStop="True" Width="80" X="520" Y="0">
+      <Events />
+    </Button>
+    <Button ID="82330bf1-36f4-411d-808f-be064fef2b78" AccessKey="" DisplayName="生成条码" DisplayNameIndexStr="" DisplayNameResourceID="" DisplaySrcType="Custom" DisplaySrcUIFieldID="" DisplaySrcUIViewID="" GridHeight="1" GridWidth="1" GridX="8" GridY="0" Height="20" Name="BtnOk" TabIndex="1" TabStop="True" Width="80" X="430" Y="0">
+      <Events>
+        <Event EnableEvent="True" EventType="PostBack" IsDataBinding="True" IsDataCollect="True" Name="Click" Parameter="" Template="" />
+      </Events>
+    </Button>
+  </Card>
+  <Events />
+</View>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIModelComponent id="428cd297-c0d2-48ec-b9f5-455391e90111" name="CheckBarCodeBListUIModel" displayName="CheckBarCodeBListUIModel" description="" help="">
+  <UIModels>
+    <UIModel id="d4fb6df2-126b-48f9-b10d-69494790490b" name="CheckBarCodeBListUIModel" displayName="CheckBarCodeBListUIModel" description="" help="" Namespace="UFIDA.U9.Cust.JSDY.CheckBarCodeBListUIModel" QueryInfo="7b0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28
+995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8ifo1f89f4NX6N/5se/MTz
+6+GXf/E3e/x7vFuU6WVeN0W1/Oyj3fHOR2m+nFazYnnx2Ufr9nz74KPf4+jxT6zz+vqkWqyqZb5s
+02L22UeTbHe6c35vsj3dnX26vb+/c387+3Tv/vZ5Nr33cG8nm93b3fsoXWaL/LOPTub59O2TrD6p
+ZvlP1NcfpbOiWZXZ9YuBb/NmWherllH6KJ3n5Qo/GYk31yt65XnRtPrBV6/OPvto5/70wW52fm97
+90E+3d5/MHuwnR0cPNzee5B/ujM7v5/dnzzQ9q+rdT3Nn63LUnr/6tnZ0+PxVw/HJ+umHX/n9dPf
+Z6y4jH3EPkq/OvvJIr96WmcXggN++2r1UfoqPz9bnlfPq2wmX5xk03n+0dHjJ1lTTPEV02u6M7uf
+7812tz/dPZ9s70+n+9uTfUJxei/7dPYw33u49/DA0KtDoEGKUNdvqrc5f/aqqtqn1OykWrb5u/Yn
+s3LNrz4ryjav32STnyyaYlLSZ2/qNQ3npCrXi2X/89dV3fY/FSin71bZcvY8v8zLzz66Z2B0PwWE
+7md3iRwvlVJMjoe79/Lde9P72w92dogc5/d2aMbuPSSaTM739g52zvcfWva5LTle1tVP59P27Kn3
+x8usnePPJy/P2nwhXz15+eUqrzO8Lh88ffOl+eb4ghj8aVl6fxGkd9f4mwbx1Zk/iPOdTx/s3KdJ
+/HS2n2/v7zzItiefZg+2d6dZnj8knssm977JQXx19gWxYmlGsnN/f3Ywy7Lt+7N7+ySCk8n2QT7d
+2Z7eP8gfTKa7D7O9c7z0rKoX5p3dvd37B9nk4fb+wd4e/pmR2E7ub092sp2DnXv79z89yFxH9MJs
+/3zy6ex8b3t371OaqINzmqPdndn2pw/3H+4/eLiz/3BnwqR5mp9n67I9yZpceV+Ypgn+YrrtPnjw
+8MG9/dn25GCXYO7t7m8/zGkck/3zg52Hk93Z/t59QzcrfwH5/os//y/+L/+iP3iQiHf7fU4P9g4+
+nZGWogGdE7EeTrYnk4cPtg8+3c127s8efHrvoe0TxOp2+Gf82f/5n7qxw7vhmA05WETob/mFUdmZ
+ZQef7u99ur2zs0fztvtguj3J8k+3703v7X46y/b2Jzuffujwve4e7u7T2GY723uf3r9H3VHHD6cz
+Iv6nuzt7u/cOdvanD/2Rj2Md0vD/xL/zlh0+yHd29h/Q9D7c2aEOZzs76Ove9t75QxLvAzIb5w+C
+DtFHp0Mi9n/+J/3xt+xwtv/g08kkn23vEq9u7987eLD98CFplN2D3fsP7z24d/9eZuf2eNqus/J5
+vrxo590+/4a/4L/+s//w//pP/wf/87/nr7hlz7vn558+ODifbt/f2Xuwvf8pmaCDvfvEyfm9g/Od
+/MGDyfk0sIL57Mtlp9v/8s/9s/7LP+Tv/i/+zL/jv/4z/7Zbdjt7+GDvPPv0fPvTgwl1m8/2iJln
+B9ufTs+n052DycFkd7fT7ZOu2ZVu/7O/5+/ZyNRdNrYfsJjfDR2Do9/w1/jR86PnR8+Pnh89P3p+
+9Py/5vl/AA==" UseType="ForQuery">
+      <UIModelInfos>
+        <UIModelInfo id="a5719b08-3cb4-4a0a-837f-57aff4748076" name="CheckBarCodeBListUIModel" displayName="CheckBarCodeBListUIModel" description="" help="" FullName="CheckBarCodeBListUIModel" DataTypeID="" MappingID="" MappingName="" IsMap="False">
+          <UIModelInfo id="246be8d4-063e-40c1-98fd-b981c4ef9e28" name="QueryView" displayName="QueryView" description="" help="" FullName="CheckBarCodeBListUIModel.QueryView" DataTypeID="14d819ea-0482-47cd-9963-9d4bdb6f62c6" MappingID="" MappingName="" IsMap="False">
+            <UIModelInfo id="a61b4c9f-76a7-4d17-ad0b-73ed6b6bb0cf" name="ID" displayName="ID" description="" help="" FullName="CheckBarCodeBListUIModel.QueryView.ID" DataTypeID="ba391065-6c27-4c82-acc8-b52b1c93a910" MappingID="" MappingName="" IsMap="False" />
+          </UIModelInfo>
+          <UIModelInfo id="fdae97fd-d9e2-41b4-bf83-02c6bc604587" name="CheckBarCode" displayName="CheckBarCode" description="" help="" FullName="CheckBarCodeBListUIModel.CheckBarCode" DataTypeID="4c1fd2a6-db81-49ed-b8fe-84ce34e3c189" MappingID="" MappingName="UFIDA::U9::Cust::JSDY::BarCode::CheckBarCode" IsMap="True">
+            <UIModelInfo id="2fbec7d1-9b77-4c3c-a1fc-5881e8a86192" name="ID" displayName="ID" description="" help="" FullName="CheckBarCodeBListUIModel.CheckBarCode.ID" DataTypeID="ba391065-6c27-4c82-acc8-b52b1c93a910" MappingID="4f23c251-277c-4c5a-9889-1577c8f32b4e" MappingName="ID" IsMap="True" />
+          </UIModelInfo>
+        </UIModelInfo>
+      </UIModelInfos>
+      <Views>
+        <UIViewInfo id="8f6785cc-66a2-4ebb-8681-0481719b13e2" name="CheckBarCode" displayName="库存盘点条码档案" description="" RootFullName="CheckBarCodeBListUIModel.CheckBarCode">
+          <Groups>
+            <Group id="d57862d9-9904-4804-abc0-6c958e9ebed3" name="Key" displayName="Key" description="" help="" />
+            <Group id="c7db4184-e52f-42b5-bfd8-4a151bf5c558" name="Misc" displayName="Misc" description="" help="" />
+          </Groups>
+          <Fields>
+            <UIFieldInfo id="77c3c53c-784a-4a9e-8e1f-9ae674470e55" name="ID" displayName="ID" description="" DefaultValue="" GroupName="Key" DisplayRule="19.0" IsNullable="False" IsReadOnly="False" IsEnableReference="False" IsLink="False" ControlID="68095607-50d1-4296-a35a-623b21d654f1" DataTypeID="ba391065-6c27-4c82-acc8-b52b1c93a910" EnumTypeID="" BindingFullName="CheckBarCodeBListUIModel.CheckBarCode.ID" Expression="" Sequence="0" Length="8" IsBinding="False" IsGlobalized="False" CustomIsLoadable="False" CustomAttrName="" />
+          </Fields>
+        </UIViewInfo>
+      </Views>
+      <ActionGroups>
+        <Group id="a7b9456f-3ed4-43f7-91fc-9376a922a6c6" name="Case" displayName="Case" description="" help="" />
+      </ActionGroups>
+      <Actions>
+        <UIActionInfo id="1a0b73c4-9add-4dfa-9c23-45505075c7a1" name="OnLookCase" displayName="查询" description="" help="" CodeTemplate=".\UITpls\UICommonAction.tpl" TemplateParameter="QryClick" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+        <UIActionInfo id="ba5861ba-a42f-4f5f-ae2e-2428ddef03b6" name="OnCaseChanged" displayName="改变方案" description="" help="" CodeTemplate="" TemplateParameter="" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+        <UIActionInfo id="a4aa795b-2d13-46f7-877f-42d8e303dfec" name="OnOutPut" displayName="输出" description="" help="" CodeTemplate=".\UITpls\UICommonAction.tpl" TemplateParameter="OnOutPut" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+        <UIActionInfo id="f4be6912-690f-41fc-9c2d-1602f402df71" name="OnPrint" displayName="打印" description="" help="" CodeTemplate=".\UITpls\UICommonAction.tpl" TemplateParameter="OnPrint" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+        <UIActionInfo id="b4bcc324-074e-492c-85cf-bd74584ea8f1" name="OnDelete" displayName="删除" description="" help="" CodeTemplate=".\UITpls\UICommonAction.tpl" TemplateParameter="ListDeleteClick" GroupName="Case" DictionaryItemKey="" IsSyncDictionary="True" />
+      </Actions>
+    </UIModel>
+  </UIModels>
+</UIModelComponent>

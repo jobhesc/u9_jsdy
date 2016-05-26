@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project id="842e7a32-08c6-4a8c-89ca-c652ae44fcb5" name="BarCodeUI" displayName="BarCodeUI" description="" help="" type="UI" assemblyName="UFIDA.U9.Cust.JSDY.BarCodeUI" mapProject="" resourceName="" projectVersion="Normal">
+  <Imports>
+    <Import id="59f6bb43-5e38-4681-a825-dd087185b7b3" name="BarCodeBE" displayName="BarCodeBE" description="" help="" componentid="f0a48417-43a7-4455-a294-a2f02d332386" path="..\..\..\..\U9.VOB.Product.Metadata\Unconfiged\Metadata\UFIDA.U9.Cust.JSDY.BarCodeBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="ca0c4457-e247-42ad-9098-33b2861a7522" name="CBO_PubBE" displayName="CBO_PubBE" description="" help="" componentid="fe8dc9a2-365d-41c0-8f48-c02abb016910" path="..\..\..\..\U9.VOB.Product.UBF\UBFStudio\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.CBO.PubBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="f481aaef-7cd6-4fd6-803f-c54f2daef4df" name="BaseBE" displayName="BaseBE" description="" help="" componentid="2402fd32-810a-4130-811d-f1e6183a5a26" path="..\..\..\..\U9.VOB.Product.UBF\UBFStudio\..\..\U9.VOB.Product.Metadata\UBF\UFIDA.U9.Base.BaseBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="d96e508e-289e-4ec3-af58-daf310e6ab56" name="CBOReferenceUI" displayName="CBOReferenceUI" description="" help="" componentid="2ac4288d-af64-42a9-bbd2-285464e8f707" path="..\..\..\..\U9.VOB.Product.Metadata\UI\UFIDA.U9.CBO.Ref.CBOReferenceUI.MetaData.dll" type="UI" isRuntime="True" />
+    <Import id="dd0fa100-a7c8-4fd8-a447-a85985d5b4a8" name="BaseReferenceUI" displayName="BaseReferenceUI" description="" help="" componentid="870381ee-cd66-4b78-8b3b-6c60e5ec43e5" path="..\..\..\..\U9.VOB.Product.Metadata\UI\UFIDA.U9.CBO.Ref.BaseReferenceUI.MetaData.dll" type="UI" isRuntime="True" />
+    <Import id="5ef1f898-a1c2-486f-84da-b816a0ab63b7" name="ItemUI" displayName="ItemUI" description="" help="" componentid="7b6cc2cc-7a33-4e83-b812-0dd14acf4570" path="..\..\..\..\U9.VOB.Product.Metadata\UI\UFIDA.U9.CBO.Pub.Item.ItemUI.MetaData.dll" type="UI" isRuntime="True" />
+    <Import id="78040111-fbaf-4b56-9f71-e14f969e6595" name="OperatorUI" displayName="OperatorUI" description="" help="" componentid="7b57b553-0671-4319-9f13-f22c4e5ada23" path="..\..\..\..\U9.VOB.Product.Metadata\UI\UFIDA.U9.CBO.Pub.Operator.OperatorUI.MetaData.dll" type="UI" isRuntime="True" />
+    <Import id="b3a94cac-f7c9-4f7e-ad97-f30067655903" name="BarCodeBP" displayName="BarCodeBP" description="" help="" componentid="bb78bbac-e862-4603-8122-9d6417f9f76a" path="..\..\..\..\U9.VOB.Product.Metadata\Unconfiged\Metadata\UFIDA.U9.Cust.JSDY.BarCodeBP.MetaData.dll" type="BP" isRuntime="True" />
+    <Import id="052749a6-11fa-4e11-8b49-ddea5f88aabc" name="InvTransBE" displayName="InvTransBE" description="" help="" componentid="aec37794-262d-4658-824b-ecd91d269e4f" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.InvTrans.InvTransBE.MetaData.dll" type="BE" isRuntime="True" />
+  </Imports>
+  <SourceControl />
+  <ItemGroup>
+    <Item id="18c0f724-a57a-4a03-9249-3ffc07003307" name="CompleteApplyBarCodeBListUIModel.ubfuim" displayName="CompleteApplyBarCodeBListUIModel.ubfuim" description="" help="" include="CompleteApplyBarCodeBListUIModel.ubfuim" type="" />
+    <Item id="64ea76e4-4172-4923-8396-1d35e62b9d57" name="CompleteApplyBarCodeBListUIForm.ubfform" displayName="CompleteApplyBarCodeBListUIForm.ubfform" description="" help="" include="CompleteApplyBarCodeBListUIForm.ubfform" type="" />
+    <Item id="6b66df97-d07c-4663-a656-0adf5e9bc4eb" name="ProductBarCodeBListUIModel.ubfuim" displayName="ProductBarCodeBListUIModel.ubfuim" description="" help="" include="ProductBarCodeBListUIModel.ubfuim" type="" />
+    <Item id="d6fb77df-1b2b-45f8-ab67-879cde901d79" name="ProductBarCodeBListUIForm.ubfform" displayName="ProductBarCodeBListUIForm.ubfform" description="" help="" include="ProductBarCodeBListUIForm.ubfform" type="" />
+    <Item id="054d8daa-5d34-44bb-8ec0-c58e7bc19a2f" name="CheckBarCodeBListUIModel.ubfuim" displayName="CheckBarCodeBListUIModel.ubfuim" description="" help="" include="CheckBarCodeBListUIModel.ubfuim" type="" />
+    <Item id="12158ab9-4822-482d-a6b5-b0a08034568a" name="CheckBarCodeBListUIForm.ubfform" displayName="CheckBarCodeBListUIForm.ubfform" description="" help="" include="CheckBarCodeBListUIForm.ubfform" type="" />
+    <Item id="4ecf54b3-2b75-4b09-ab90-9279505ac9b3" name="CompleteApplyBarCodeUIModel.ubfuim" displayName="CompleteApplyBarCodeUIModel.ubfuim" description="" help="" include="CompleteApplyBarCodeUIModel.ubfuim" type="" />
+    <Item id="7f14d363-edb0-4689-a95a-891cbccdcaa7" name="CompleteApplyBarCodeUIForm.ubfform" displayName="CompleteApplyBarCodeUIForm.ubfform" description="" help="" include="CompleteApplyBarCodeUIForm.ubfform" type="" />
+    <Item id="6be1afe5-2666-49ae-a106-ff215710059e" name="ItemRef.ubfref" displayName="ItemRef.ubfref" description="" help="" include="ItemRef.ubfref" type="" />
+    <Item id="13f39c7a-a3fc-48a3-a089-66360863e896" name="WhQohQueryUIModel.ubfuim" displayName="WhQohQueryUIModel.ubfuim" description="" help="" include="WhQohQueryUIModel.ubfuim" type="" />
+    <Item id="c0528a00-5ae6-41bc-b295-d77ae58d006a" name="WhQohQueryUIForm.ubfform" displayName="WhQohQueryUIForm.ubfform" description="" help="" include="WhQohQueryUIForm.ubfform" type="" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,366 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Include="UBFAssebmlyInfo.cs" >
+      <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CompleteApplyBarCodeBListUIFormWebPart.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CompleteApplyBarCodeBListUIFormWebPartCodeBehind.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CompleteApplyBarCodeBListUIFormWebPartCodeBehindExtend.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CompleteApplyBarCodeBListUIFormWebPartConnection.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+		<Compile Include="WebPart\ProductBarCodeBListUIFormWebPart.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\ProductBarCodeBListUIFormWebPartCodeBehind.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\ProductBarCodeBListUIFormWebPartCodeBehindExtend.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\ProductBarCodeBListUIFormWebPartConnection.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+		<Compile Include="WebPart\CheckBarCodeBListUIFormWebPart.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CheckBarCodeBListUIFormWebPartCodeBehind.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CheckBarCodeBListUIFormWebPartCodeBehindExtend.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CheckBarCodeBListUIFormWebPartConnection.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+		<Compile Include="WebPart\CompleteApplyBarCodeUIFormWebPart.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CompleteApplyBarCodeUIFormWebPartCodeBehind.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CompleteApplyBarCodeUIFormWebPartCodeBehindExtend.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\CompleteApplyBarCodeUIFormWebPartConnection.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+		<Compile Include="WebPart\ItemRefWebPart.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\ItemRefWebPartCodeBehind.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\ItemRefWebPartCodeBehindExtend.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+		<Compile Include="WebPart\WhQohQueryUIFormWebPart.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\WhQohQueryUIFormWebPartCodeBehind.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\WhQohQueryUIFormWebPartCodeBehindExtend.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	<Compile Include="WebPart\WhQohQueryUIFormWebPartConnection.cs" >
+	    <Inproject>true</Inproject>
+    </Compile>
+	
+	<Compile Include="Model\CompleteApplyBarCodeBListUIModelModel.cs" > 
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Model\CompleteApplyBarCodeBListUIModelModelExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="Model\ProductBarCodeBListUIModelModel.cs" > 
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Model\ProductBarCodeBListUIModelModelExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="Model\CheckBarCodeBListUIModelModel.cs" > 
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Model\CheckBarCodeBListUIModelModelExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="Model\CompleteApplyBarCodeUIModelModel.cs" > 
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Model\CompleteApplyBarCodeUIModelModelExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="Model\ItemRefModel.cs" > 
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Model\ItemRefModelExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="Model\WhQohQueryUIModelModel.cs" > 
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Model\WhQohQueryUIModelModelExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+	
+	<Compile Include="Action\CompleteApplyBarCodeBListUIModelAction.cs" >
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Action\CompleteApplyBarCodeBListUIModelActionExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+
+	<Compile Include="Action\ProductBarCodeBListUIModelAction.cs" >
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Action\ProductBarCodeBListUIModelActionExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+
+	<Compile Include="Action\CheckBarCodeBListUIModelAction.cs" >
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Action\CheckBarCodeBListUIModelActionExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+
+	<Compile Include="Action\CompleteApplyBarCodeUIModelAction.cs" >
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Action\CompleteApplyBarCodeUIModelActionExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+
+	<Compile Include="Action\ItemRefAction.cs" >
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Action\ItemRefActionExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+
+	<Compile Include="Action\WhQohQueryUIModelAction.cs" >
+	    <Inproject>false</Inproject>
+	</Compile>
+	<Compile Include="Action\WhQohQueryUIModelActionExtend.cs" >
+	    <Inproject>true</Inproject>
+	</Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />  
+    <Reference Include="System.Web" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="UFSoft.UBF.UI.UIFormPersonalization">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.UIFormPersonalization.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.UIFormPersonalization.Library">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.UIFormPersonalization.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Business">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Business.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.PL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.PL.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UBF.System">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UBF.System.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.UI.PDHelper">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFIDA.U9.UI.PDHelper.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Util.Data">
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Util.Data.dll</HintPath>      
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Util.Globalization">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Util.Globalization.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.AopFrame">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.AopFrame.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.WebControls.BaseComponent">
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.WebControls.BaseComponent.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.Controls.Interface">
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.Controls.Interface.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.WebControls.Association">
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.WebControls.Association.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="RadTreeView">
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\RadTreeView.Net2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.MVC">
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.MVC.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.WebControls.UFDataGrid">
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.WebControls.UFDataGrid.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Report.Base">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Report.Base.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Report.Entity">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Report.Entity.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Report.Exception">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Report.Exception.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Report.Filter.Exception">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Report.Filter.Exception.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Report.Filter.FilterModel">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Report.Filter.FilterModel.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Report.Filter.FilterWebControl">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Report.Filter.FilterWebControl.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Report.UI.ReportView.Web.Controls">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Report.UI.ReportView.Web.Controls.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+	  <Reference Include="UFSoft.UBF.ExportService">
+		  <SpecificVersion>False</SpecificVersion>
+		  <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.ExportService.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  
+	  <Reference Include="UFSoft.UBF.Report.UI.ReportView.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Report.UI.ReportView.Common.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.IView" >  
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.IView.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.State" >  
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.State.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.ActionProcess" >  
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.ActionProcess.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.FormProcess" >  
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.FormProcess.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.MD.Runtime" >  
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.MD.Runtime.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.Engine.Runtime" >
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.Engine.Runtime.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.UI.Portal">
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.Portal.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+	<Reference Include="UFSoft.UBF.UI.Portal.Components">
+		  <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.UI.Portal.Components.dll</HintPath>
+		  <SpecificVersion>False</SpecificVersion>
+		  <Private>False</Private>
+	</Reference>	  
+	<Reference Include="System.Web.Extensions">
+	  <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\System.Web.Extensions.dll</HintPath>
+	  <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+	<Reference Include="UFIDA.UBF.Query.CommonService">
+		  <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFIDA.UBF.Query.CommonService.dll</HintPath>
+		  <SpecificVersion>False</SpecificVersion>
+		  <Private>False</Private>
+	</Reference>
+	  
+	  <Reference Include="UFIDA.UBF.Query.CaseModel">
+		  <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFIDA.UBF.Query.CaseModel.dll</HintPath>
+		  <SpecificVersion>False</SpecificVersion>
+		  <Private>False</Private>
+	  </Reference>
+
+    <Reference Include="UFSoft.UBF.Sys.ResourceBP.Agent">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Sys.ResourceBP.Agent.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+	  
+	  
+    
+	
+	
+	
+	
+	
+	
+	  
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+   <PropertyGroup Condition="">
+    <PostBuildEvent>
+    
+	Md $(ProjectDir)\.\..\..\..\..\U9.VOB.Product.WebPart\\\
+	cd $(ProjectDir)\.\..\..\..\..\U9.VOB.Product.WebPart\\\
+	Copy $(TargetDir)\UFIDA.U9.Cust.JSDY.BarCodeUI.WebPart.dll 
+	Copy $(TargetDir)\UFIDA.U9.Cust.JSDY.BarCodeUI.WebPart.pdb 
+    </PostBuildEvent>
+   </PropertyGroup>
+</Project>

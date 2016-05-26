@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UBF_MD_ASRPT_ReportTemplates>
+  <UBF_MD_ASRPT_ReportTemplate>
+    <ID>8e3fcd50-e64f-4549-b9ed-0d4c317c0ebe</ID>
+    <uReportID>6f7dbadf-b046-49f7-b22a-534ed6835369</uReportID>
+    <cCulture>zh-CN</cCulture>
+    <cUserID>
+    </cUserID>
+    <cCaseName>
+    </cCaseName>
+    <iDefault>1</iDefault>
+    <cCreateBy>Administrator</cCreateBy>
+    <dCreateDate>2016/1/18 17:55:34</dCreateDate>
+    <cType>UFSoft.UBF.Report.Entity.Report</cType>
+    <mContent>8e3fcd50-e64f-4549-b9ed-0d4c317c0ebezh-CN.xml</mContent>
+  </UBF_MD_ASRPT_ReportTemplate>
+  <UBF_MD_ASRPT_ReportTemplate>
+    <ID>564f7e70-988e-4c63-acba-af4b607a6f35</ID>
+    <uReportID>aa972667-ebfd-4171-91e8-185863d6a1fd</uReportID>
+    <cCulture>zh-CN</cCulture>
+    <cUserID>
+    </cUserID>
+    <cCaseName>
+    </cCaseName>
+    <iDefault>1</iDefault>
+    <cCreateBy>Administrator</cCreateBy>
+    <dCreateDate>2016/1/18 18:04:40</dCreateDate>
+    <cType>UFSoft.UBF.Report.Entity.Report</cType>
+    <mContent>564f7e70-988e-4c63-acba-af4b607a6f35zh-CN.xml</mContent>
+  </UBF_MD_ASRPT_ReportTemplate>
+</UBF_MD_ASRPT_ReportTemplates>

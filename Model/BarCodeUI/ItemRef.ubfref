@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReferenceComponent id="b2ccf05d-c424-4574-af1c-469aa085f418" name="ItemRef" displayName="料品" description="" help="" refType="1" isMultiSelect="False" isDefault="False" isClientReturn="False" width="580" height="408" isBinding="False" displayNameResourceID="" URI="UFIDA.U9.Cust.JSDY.BarCodeUI.ItemRef" Classify="" ForMultOrg="False">
+  <References>
+    <Reference id="62a979fb-7bd4-430c-9ff2-9637229a2986" name="cRef" displayName="cRef" description="" help="料品" refEntityId="636d3e47-48aa-47fc-aca4-e6322bce775b" refEntityName="UFIDA.U9.CBO.SCM.Item.ItemMaster" refType="1" isMain="False">
+      <RefFields>
+        <RefField id="f9d8c89d-f290-466b-b132-ec0aab3bb6cb" name="ID" displayName="ID" description="" help="料品.Key.ID" isKey="True" isEdit="False" isName="False" isVisible="False" isParent="False" sequence="0" length="80" refAttributeName="UFIDA.U9.CBO.SCM.Item.ItemMaster:ID" displayNameIndexStr="2" />
+        <RefField id="62ab4f5f-286b-48e9-84d2-0febe8bf5df8" name="Code" displayName="料号" description="" help="料品.料品.料号" isKey="False" isEdit="True" isName="True" isVisible="True" isParent="False" sequence="0" length="120" refAttributeName="UFIDA.U9.CBO.SCM.Item.ItemMaster:Code" displayNameIndexStr="" />
+        <RefField id="5d447b98-8787-42fc-ac0f-c1688bd44e2e" name="Name" displayName="品名" description="" help="料品.料品.品名" isKey="False" isEdit="False" isName="False" isVisible="True" isParent="False" sequence="0" length="180" refAttributeName="UFIDA.U9.CBO.SCM.Item.ItemMaster:Name" displayNameIndexStr="2" />
+        <RefField id="559f0f3d-1fa7-4a3f-b4f3-8a39467eda4e" name="SPECS" displayName="规格" description="" help="料品.料品.规格" isKey="False" isEdit="False" isName="False" isVisible="True" isParent="False" sequence="0" length="120" refAttributeName="UFIDA.U9.CBO.SCM.Item.ItemMaster:SPECS" displayNameIndexStr="2" />
+        <RefField id="83b01abb-048f-4a49-ba4b-e99d5828d922" name="DescFlexField_PrivateDescSeg1" displayName="检验标准" description="" help="实体扩展字段集合.Misc.私有段1" isKey="False" isEdit="False" isName="False" isVisible="True" isParent="False" sequence="0" length="100" refAttributeName="UFIDA.U9.CBO.SCM.Item.ItemMaster:DescFlexField.PrivateDescSeg1" displayNameIndexStr="" />
+      </RefFields>
+      <Filter>Org=#Context.OrgID#</Filter>
+    </Reference>
+  </References>
+</ReferenceComponent>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceGroup>
+  <ServiceGroupInfo id="107c97dc-f6e9-4b40-80b4-cc43df0594b4" name="jsdy" displayName="jsdy" description="" help="" fullPath="C:\yonyou\UBFV50\Unsigned\jsdy\Model\jsdy.sg" applicationID="" />
+  <AssemblyGroup>
+    <Assembly ID="f0a48417-43a7-4455-a294-a2f02d332386" name="UFIDA.U9.Cust.JSDY.BarCodeBE" type="BE" path="" />
+    <Assembly ID="842e7a32-08c6-4a8c-89ca-c652ae44fcb5" name="UFIDA.U9.Cust.JSDY.BarCodeUI" type="UI" path="" />
+    <Assembly ID="3f8d8698-595e-4e10-8b96-d874b3389f05" name="BarCodeQry" type="" path="" />
+    <Assembly ID="bb78bbac-e862-4603-8122-9d6417f9f76a" name="UFIDA.U9.Cust.JSDY.BarCodeBP" type="BP" path="" />
+    <Assembly ID="27daeb13-a054-4807-b395-7c5328968bd3" name="UFIDA.U9.Cust.JSDY.BarCodeSV" type="SV" path="" />
+  </AssemblyGroup>
+</ServiceGroup>

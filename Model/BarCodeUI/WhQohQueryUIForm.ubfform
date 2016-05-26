@@ -1,0 +1,128 @@
+<View ID="1230c62c-36d0-49da-b9d8-00dcafb3e6b6" ChildLabelWidth="56" ChildRefWidth="20" DisplayName="库存量查询" DisplayNameIndexStr="" DisplayNameResourceID="" DisplaySrcType="Custom" DisplaySrcUIFieldID="" DisplaySrcUIViewID="" GridBottomMargin="5" GridColumnCount="1" GridColumnSpace="24" GridLeftMargin="0" GridRightMargin="0" GridRowCount="3" GridRowSpace="10" GridTopMargin="0" Height="504" IsMainForm="True" LayoutType="GridBag" Name="WhQohQueryUIForm" Namespace="UFIDA.U9.Cust.JSDY.WhQohQueryUIModel" TabStop="False" TemplateCode="UI_ListForm" TemplateType="CustomTemplate" UIModelID="1c0bcb53-4808-4521-9734-c26e99447e9f" URI=".UI_列表FormWebPart" ViewID="4983" Width="992" X="10" Y="10">
+  <Columns>
+    <Column Fixed="False" Name="Column0" Type="Title" Width="992" />
+  </Columns>
+  <Rows>
+    <Row Fixed="False" Height="1" Name="Row0" />
+    <Row Fixed="False" Height="448" Name="Row1" />
+    <Row Fixed="True" Height="25" Name="Row3" />
+  </Rows>
+  <Providers />
+  <InParameters />
+  <Card ID="8fdef067-ea19-488d-a46d-af0cc35a1b99" ChildLabelWidth="60" ChildRefWidth="20" FunctionBar="FunctionBar" GridBottomMargin="2" GridColumnCount="17" GridColumnSpace="0" GridHeight="1" GridLeftMargin="10" GridRightMargin="10" GridRowCount="1" GridRowSpace="5" GridTopMargin="3" GridWidth="1" GridX="0" GridY="2" Height="25" LayoutType="GridBag" Name="Card0" TabIndex="3" TabStop="False" Width="992" X="0" Y="469">
+    <Columns>
+      <Column Fixed="True" Name="Column0" Type="Title" Width="80" />
+      <Column Fixed="True" Name="Column1" Type="Spacing" Width="10" />
+      <Column Fixed="True" Name="Column2" Type="Value" Width="80" />
+      <Column Fixed="True" Name="Column3" Type="Spacing" Width="10" />
+      <Column Fixed="True" Name="Column4" Type="Value" Width="80" />
+      <Column Fixed="True" Name="Column5" Type="Spacing" Width="10" />
+      <Column Fixed="True" Name="Column6" Type="Value" Width="80" />
+      <Column Fixed="True" Name="Column13" Type="Spacing" Width="10" />
+      <Column Fixed="True" Name="Column12" Width="80" />
+      <Column Fixed="True" Name="Column11" Type="Spacing" Width="10" />
+      <Column Fixed="True" Name="Column10" Width="80" />
+      <Column Fixed="True" Name="Column9" Width="114" />
+      <Column Fixed="False" Name="Column16" Width="157" />
+      <Column Fixed="False" Name="Column15" Type="Title" Width="80" />
+      <Column Fixed="False" Name="Column14" Type="Spacing" Width="10" />
+      <Column Fixed="True" Name="Column7" Width="80" />
+      <Column Fixed="False" Name="Column8" Width="1" />
+    </Columns>
+    <Rows>
+      <Row Fixed="True" Height="20" Name="Row0" />
+    </Rows>
+    <Button ID="921ad206-7b89-4f37-b3be-d9517a2846eb" DisplayName="关闭" DisplayNameIndexStr="" DisplayNameResourceID="" DisplaySrcType="Custom" DisplaySrcUIFieldID="" DisplaySrcUIViewID="" GridHeight="1" GridWidth="1" GridX="15" GridY="0" Height="20" Name="BtnClose" TabIndex="0" TabStop="True" Width="80" X="901" Y="3">
+      <Events />
+    </Button>
+  </Card>
+  <Card ID="62336e07-4593-41fa-a362-159d64761221" ChildLabelWidth="60" ChildRefWidth="20" GridBottomMargin="0" GridColumnCount="2" GridColumnSpace="0" GridHeight="1" GridLeftMargin="10" GridRightMargin="10" GridRowCount="2" GridRowSpace="5" GridTopMargin="0" GridWidth="1" GridX="0" GridY="1" Height="448" LayoutType="GridBag" Name="Card3" TabIndex="2" TabStop="False" Width="992" X="0" Y="11">
+    <Columns>
+      <Column Fixed="True" Name="Column0" Type="Value" Width="971" />
+      <Column Fixed="False" Name="Column1" Type="Spacing" Width="1" />
+    </Columns>
+    <Rows>
+      <Row Fixed="True" Height="442" Name="Row0" />
+      <Row Fixed="False" Height="1" Name="Row1" />
+    </Rows>
+    <DataGrid ID="ef380abc-8bb6-499e-9beb-f3bd4edb4ff8" EditStatus="browse" Enabled="True" GridHeight="2" GridWidth="1" GridX="0" GridY="0" HasSum="False" Height="448" Name="DataGrid1" PageSize="18" Paging="True" TabIndex="1" TabStop="True" Width="971" X="10" Y="0">
+      <Events />
+      <Header ID="d0cc6b6f-35fc-4266-9054-14613d995644" Name="Header1">
+        <HeaderRow Name="DefaultRow">
+          <HeaderCell ID="74519cf9-3cba-4806-a7cc-c377d3f1a7c8" ColSpan="1" Name="HeaderCell0" OwnerColName="ID0" RowSpan="1" />
+          <HeaderCell ID="28c73f4c-352f-4ccd-b62d-442b061e5737" ColSpan="1" Name="HeaderCell1" OwnerColName="ItemCode0" RowSpan="1" />
+          <HeaderCell ID="d71a8f76-19fb-42bb-a24c-2b31bc3713af" ColSpan="1" Name="HeaderCell2" OwnerColName="ItemName0" RowSpan="1" />
+          <HeaderCell ID="763733cd-2773-4af4-a2f4-f401bd628db8" ColSpan="1" Name="HeaderCell3" OwnerColName="Wh0" RowSpan="1" />
+          <HeaderCell ID="dd0793a0-e984-4465-b1a5-fb467349186c" ColSpan="1" Name="HeaderCell4" OwnerColName="Lot0" RowSpan="1" />
+          <HeaderCell ID="219388af-bc1e-4091-8cd6-7c6f7473ec84" ColSpan="1" Name="HeaderCell5" OwnerColName="SegLength0" RowSpan="1" />
+          <HeaderCell ID="b92ffe3e-dec2-46b8-a222-3b8fb3b37af8" ColSpan="1" Name="HeaderCell6" OwnerColName="StoreQty0" RowSpan="1" />
+          <HeaderCell ID="edc7b618-016b-4538-939a-887a554df52a" ColSpan="1" Name="HeaderCell7" OwnerColName="UOM0" RowSpan="1" />
+          <HeaderCell ID="1a5d411e-3fb2-46ec-8333-e8533f33e572" ColSpan="1" Name="HeaderCell8" OwnerColName="UOM_RoundValue0" RowSpan="1" />
+          <HeaderCell ID="b93bae23-721a-4d40-bc22-0e3e60eda2e5" ColSpan="1" Name="HeaderCell9" OwnerColName="UOM_RoundType0" RowSpan="1" />
+          <HeaderCell ID="fbd8e394-34c2-469f-9602-7c5f8743a8aa" ColSpan="1" Name="HeaderCell10" OwnerColName="UOM_Precision0" RowSpan="1" />
+        </HeaderRow>
+      </Header>
+      <UIFilterBar Name="LocateBar" />
+      <Columns>
+        <NumberColumn ID="e0aeda4f-90c2-417d-88cc-ed12ae9bc767" DefaultValue="" DisplayFormat="" Enabled="True" Help="Key.ID" IsNull="False" IsProperty="False" IsSequence="True" Name="ID0" NPos="1" Point="0" UIFieldID="ID" UIViewID="QueryResultView" Visible="False">
+          <PrecisionBind />
+          <RoundRuleBind />
+          <ValueOfRoundByValueBind />
+          <CurrencyType />
+          <Events />
+        </NumberColumn>
+        <TextBoxColumn ID="e2be7bf3-1ad0-4f33-b513-1732d3f82764" DefaultValue="" DisplayFormat="50" Enabled="True" Help="Misc.料号" IsNull="True" IsProperty="False" IsSequence="False" Name="ItemCode0" NPos="2" Point="0" TextAlign="Left" UIFieldID="ItemCode" UIViewID="QueryResultView" Visible="True" Width="200">
+          <Events />
+        </TextBoxColumn>
+        <TextBoxColumn ID="10fd88ac-1df1-4096-8557-d9f2efd9ad23" DefaultValue="" DisplayFormat="50" Enabled="True" Help="Misc.品名" IsNull="True" IsProperty="False" IsSequence="False" Name="ItemName0" NPos="3" Point="0" TextAlign="Left" UIFieldID="ItemName" UIViewID="QueryResultView" Visible="True">
+          <Events />
+        </TextBoxColumn>
+        <TextBoxColumn ID="0cf67924-4bd6-4cc4-a7dd-2648c30401da" DefaultValue="" DisplayFormat="50" Enabled="True" Help="Misc.仓库" IsNull="True" IsProperty="False" IsSequence="False" Name="Wh0" NPos="4" Point="0" TextAlign="Left" UIFieldID="Wh" UIViewID="QueryResultView" Visible="True">
+          <Events />
+        </TextBoxColumn>
+        <TextBoxColumn ID="782fd3c8-4001-4bbb-a4d7-0f3ff3dc6e91" DefaultValue="" DisplayFormat="50" Enabled="True" Help="Misc.批号" IsNull="True" IsProperty="False" IsSequence="False" Name="Lot0" NPos="5" Point="0" TextAlign="Left" UIFieldID="Lot" UIViewID="QueryResultView" Visible="True" Width="150">
+          <Events />
+        </TextBoxColumn>
+        <NumberColumn ID="e25a81cc-a089-41b3-9cf6-cbcf67839516" DefaultValue="" DisplayFormat="10.0" Enabled="True" Help="Misc.段长" IsNull="True" IsProperty="False" IsSequence="False" Name="SegLength0" NPos="6" Point="0" UIFieldID="SegLength" UIViewID="QueryResultView" Visible="True">
+          <PrecisionBind />
+          <RoundRuleBind />
+          <ValueOfRoundByValueBind />
+          <CurrencyType />
+          <Events />
+        </NumberColumn>
+        <NumberColumn ID="106be3e7-44ed-4c61-9b51-31ca598604cd" DefaultValue="" DisplayFormat="18.0" Enabled="True" Help="Misc.库存量" IsNull="True" IsProperty="False" IsSequence="False" Name="StoreQty0" NPos="7" Point="0" UIFieldID="StoreQty" UIViewID="QueryResultView" Visible="True">
+          <PrecisionBind BindType="UIField" UIFieldID="UOM_Precision" UIViewID="QueryResultView" />
+          <RoundRuleBind BindType="UIField" UIFieldID="UOM_RoundValue" UIViewID="QueryResultView" />
+          <ValueOfRoundByValueBind BindType="UIField" UIFieldID="UOM_RoundType" UIViewID="QueryResultView" />
+          <CurrencyType />
+          <Events />
+        </NumberColumn>
+        <TextBoxColumn ID="64fe8041-37a2-485d-8726-6231018545c5" DefaultValue="" DisplayFormat="50" Enabled="True" Help="Misc.单位" IsNull="True" IsProperty="False" IsSequence="False" Name="UOM0" NPos="8" Point="0" TextAlign="Left" UIFieldID="UOM" UIViewID="QueryResultView" Visible="True">
+          <Events />
+        </TextBoxColumn>
+        <NumberColumn ID="4bf15325-9e36-4b06-915b-ee62277439db" DefaultValue="" DisplayFormat="10.0" Enabled="True" Help="Misc.单位舍入类型" IsNull="True" IsProperty="False" IsSequence="False" Name="UOM_RoundValue0" NPos="9" Point="0" UIFieldID="UOM_RoundValue" UIViewID="QueryResultView" Visible="False">
+          <PrecisionBind />
+          <RoundRuleBind />
+          <ValueOfRoundByValueBind />
+          <CurrencyType />
+          <Events />
+        </NumberColumn>
+        <NumberColumn ID="fe891fb4-5a1b-4042-ab54-c98d0fd43db6" DefaultValue="" DisplayFormat="10.0" Enabled="True" Help="Misc.单位舍入值" IsNull="True" IsProperty="False" IsSequence="False" Name="UOM_RoundType0" NPos="10" Point="0" UIFieldID="UOM_RoundType" UIViewID="QueryResultView" Visible="False">
+          <PrecisionBind />
+          <RoundRuleBind />
+          <ValueOfRoundByValueBind />
+          <CurrencyType />
+          <Events />
+        </NumberColumn>
+        <NumberColumn ID="fed5f14f-f2f2-43e8-bd20-f4648ecd16d8" DefaultValue="" DisplayFormat="10.0" Enabled="True" Help="Misc.单位精度" IsNull="True" IsProperty="False" IsSequence="False" Name="UOM_Precision0" NPos="11" Point="0" UIFieldID="UOM_Precision" UIViewID="QueryResultView" Visible="False">
+          <PrecisionBind />
+          <RoundRuleBind />
+          <ValueOfRoundByValueBind />
+          <CurrencyType />
+          <Events />
+        </NumberColumn>
+      </Columns>
+    </DataGrid>
+  </Card>
+  <Events />
+</View>

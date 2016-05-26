@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QueryComponent id="4dd63385-cde6-48fe-85b5-3f6d41a64a32" name="ProductBarCodeQry" displayName="ProductBarCodeQry" description="" help="" QueryType="List" QueryURI="05f353bb-cf3e-48e4-ac0e-9f10376d646b" QuerySourceFullName="UFIDA.U9.Cust.JSDY.BarCode.ProductBarCode" UIViewDragType="DragUp" RefInfoLoadType="Cache">
+  <BasicInfo id="a848a9dc-35df-4d84-b3ff-904eb12e0615" name="" displayName="" description="" help="" RefToken="" RootDescContextValue="" FilterTabVisible="True" ColumnTabVisible="True" SortTabVisible="True" FilterExpandLevel="3" ColumnExpandLevel="3" SortExpandLevel="3" />
+  <BPRefInfo id="0a28db91-b864-4079-a47d-35543e2ff742" name="" displayName="" description="" help="" ProjectID="" ProjectPath="" BPItemID="" BPOperationID="" DTOID="" BPAgentDll="" BPAgentProxy="" />
+  <UIRefInfo id="acc05171-ea42-45f4-b637-fc75f534ff8a" name="" displayName="" description="" help="" ProjectID="" ProjectPath="" UIModelItemID="6b66df97-d07c-4663-a656-0adf5e9bc4eb" UIFormItemID="d6fb77df-1b2b-45f8-ab67-879cde901d79" UIModelID="fe92083f-7196-4a16-83de-16d3224fdd23" />
+  <DefaultCase>
+    <BasicFilters>
+      <BasicFilter id="4aa1cf6c-b039-466e-ad79-f36bfc114b68" name="BarCode" displayName="条码" description="" help="" />
+      <BasicFilter id="f3b789c0-3d01-45bd-909c-9297c677f2b4" name="Item" displayName="料品" description="" help="" />
+    </BasicFilters>
+    <DefaultColumns>
+      <Column id="11d02b1b-1d18-428c-b87e-1d9b36e1c20b" name="BarCode" displayName="条码" description="" help="" />
+      <Column id="91324d89-c29d-4858-a538-22e961fad94c" name="Item.Code" displayName="料号" description="" help="" />
+      <Column id="5f1574a4-0d3f-41dd-ba38-64d012c699fd" name="Item.Name" displayName="品名" description="" help="" />
+      <Column id="0a8343b8-8cb7-40cb-bf31-f225b7acde0c" name="ActualLength" displayName="实际长度" description="" help="" />
+      <Column id="7b7f2586-705e-423d-a79c-8ba4de28f347" name="MarkingLength" displayName="合格证标示长度" description="" help="" />
+      <Column id="c39ad7f8-825c-41b5-b978-2aa0e406ba09" name="Operators.Code" displayName="检验员编码" description="" help="" />
+      <Column id="a7bdfedd-591d-4069-9c5c-5e83389aa475" name="ScanOn" displayName="扫描时间" description="" help="" />
+      <Column id="956eb4f7-6800-48ea-9096-9d09f64bd2e8" name="ScanBy" displayName="扫描人" description="" help="" />
+      <Column id="4018d60c-14aa-4ebf-b60f-bf0ba226042b" name="PrintedOn" displayName="打印时间" description="" help="" />
+      <Column id="6dfcfb83-a584-43cd-83bc-7c46f5d49af4" name="PrintedBy" displayName="打印人" description="" help="" />
+    </DefaultColumns>
+  </DefaultCase>
+</QueryComponent>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project id="f0a48417-43a7-4455-a294-a2f02d332386" name="BarCodeBE" displayName="BarCodeBE" description="" help="" type="BE" assemblyName="UFIDA.U9.Cust.JSDY.BarCodeBE" mapProject=".\..\BarCodeBE_DB\BarCodeBE_DB.ubfdbproj" resourceName="" projectVersion="Normal">
+  <Imports>
+    <Import id="bbecbe64-c11c-4d96-82f0-843c7e3fbb7e" name="BaseBE" displayName="BaseBE" description="" help="" componentid="2402fd32-810a-4130-811d-f1e6183a5a26" path="..\..\..\..\U9.VOB.Product.Metadata\UBF\UFIDA.U9.Base.BaseBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="f50aef6e-83a4-43cb-8d80-47563fc28b8a" name="CBO_PubBE" displayName="CBO_PubBE" description="" help="" componentid="fe8dc9a2-365d-41c0-8f48-c02abb016910" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.CBO.PubBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="566f1261-0a70-41b1-af0b-593e1d5c0d18" name="LotBE" displayName="LotBE" description="" help="" componentid="84da9a87-895d-4954-a168-832b2316ee21" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.Lot.LotBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="d6b70499-7392-45dd-bc6b-32c048e09d57" name="PMBE" displayName="PMBE" description="" help="" componentid="40c924ae-393f-4adb-9176-e5e26110633d" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.PM.PMBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="da81b2c2-fdae-4ba0-a63f-49a0dabb1a69" name="SMBE" displayName="SMBE" description="" help="" componentid="c901c367-9f35-425c-812e-9a9966cb21a3" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.SM.SMBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="262a0b79-15ac-4aad-ac28-0c826e7a746d" name="CompleteBE" displayName="CompleteBE" description="" help="" componentid="24e64e17-c906-4486-9978-fbce6f2570eb" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.Complete.CompleteBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="9d4d410b-15af-482c-aa10-87ab5054fbf0" name="InvDocBE" displayName="InvDocBE" description="" help="" componentid="bedae155-1aeb-4d49-b2c3-7ce5233e7ef4" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.InvDoc.InvDocBE.MetaData.dll" type="BE" isRuntime="True" />
+  </Imports>
+  <SourceControl />
+  <ItemGroup>
+    <Item id="ac800009-212c-4c65-b10e-769870169964" name="CompleteApplyBarCodeBE.ubfbe" displayName="BarCodeBE.ubfbe" description="" help="" include="CompleteApplyBarCodeBE.ubfbe" type="BE" />
+    <Item id="da643a5b-7a39-455b-8ac1-d0e7ac592605" name="ProductBarCodeBE.ubfbe" displayName="ProductBarCodeBE.ubfbe" description="" help="" include="ProductBarCodeBE.ubfbe" type="BE" />
+    <Item id="4392a83c-7411-4df8-8c77-ec55e0df52ee" name="CheckBarCodeBE.ubfbe" displayName="CheckBarCodeBE.ubfbe" description="" help="" include="CheckBarCodeBE.ubfbe" type="BE" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UBF_MD_ASRPT_Categorys Type="Print">
+  <UBF_MD_ASRPT_Category>
+    <ID>6f7dbadf-b046-49f7-b22a-534ed6835369</ID>
+    <cName>完工申报条码</cName>
+    <cDescription>
+    </cDescription>
+    <uParent>13d34427-eee3-432d-84d7-b15a6fe929b7</uParent>
+    <iType>1</iType>
+    <iLevel>2</iLevel>
+    <iVisible>1</iVisible>
+    <cCreateBy>Administrator</cCreateBy>
+    <dCreateDate>2016/1/18 16:33:36</dCreateDate>
+    <dModifyDate>2016/1/18 16:33:36</dModifyDate>
+    <IsExportPoint>False</IsExportPoint>
+    <tPropertys>
+    </tPropertys>
+    <cformID>
+    </cformID>
+    <BEKEY>
+    </BEKEY>
+    <iUserDefine>0</iUserDefine>
+    <mDefaultTemplate>1</mDefaultTemplate>
+    <mIndividuation>
+    </mIndividuation>
+  </UBF_MD_ASRPT_Category>
+  <UBF_MD_ASRPT_Category>
+    <ID>13d34427-eee3-432d-84d7-b15a6fe929b7</ID>
+    <cName>CompleteApplyBarCode</cName>
+    <cDescription>
+    </cDescription>
+    <uParent>904e64e0-c384-46d5-a2bc-4b7841d3384e</uParent>
+    <iType>0</iType>
+    <iLevel>1</iLevel>
+    <iVisible>1</iVisible>
+    <cCreateBy>Administrator</cCreateBy>
+    <dCreateDate>2016/1/18 16:29:48</dCreateDate>
+    <dModifyDate>2016/1/18 16:29:48</dModifyDate>
+    <IsExportPoint>False</IsExportPoint>
+    <tPropertys>
+    </tPropertys>
+    <cformID>
+    </cformID>
+    <BEKEY>UFIDA.U9.Cust.JSDY.BarCode.CompleteApplyBarCode</BEKEY>
+    <iUserDefine>0</iUserDefine>
+    <mDefaultTemplate>
+    </mDefaultTemplate>
+    <mIndividuation>
+    </mIndividuation>
+  </UBF_MD_ASRPT_Category>
+  <UBF_MD_ASRPT_Category>
+    <ID>aa972667-ebfd-4171-91e8-185863d6a1fd</ID>
+    <cName>成品条码</cName>
+    <cDescription>
+    </cDescription>
+    <uParent>b4c4f38d-5bbd-44d0-8bfb-c88d11a71701</uParent>
+    <iType>1</iType>
+    <iLevel>2</iLevel>
+    <iVisible>1</iVisible>
+    <cCreateBy>Administrator</cCreateBy>
+    <dCreateDate>2016/1/18 18:04:29</dCreateDate>
+    <dModifyDate>2016/1/18 18:04:29</dModifyDate>
+    <IsExportPoint>False</IsExportPoint>
+    <tPropertys>
+    </tPropertys>
+    <cformID>
+    </cformID>
+    <BEKEY>
+    </BEKEY>
+    <iUserDefine>0</iUserDefine>
+    <mDefaultTemplate>0</mDefaultTemplate>
+    <mIndividuation>
+    </mIndividuation>
+  </UBF_MD_ASRPT_Category>
+  <UBF_MD_ASRPT_Category>
+    <ID>b4c4f38d-5bbd-44d0-8bfb-c88d11a71701</ID>
+    <cName>ProductBarCode</cName>
+    <cDescription>
+    </cDescription>
+    <uParent>904e64e0-c384-46d5-a2bc-4b7841d3384e</uParent>
+    <iType>0</iType>
+    <iLevel>1</iLevel>
+    <iVisible>1</iVisible>
+    <cCreateBy>Administrator</cCreateBy>
+    <dCreateDate>2016/1/18 16:30:36</dCreateDate>
+    <dModifyDate>2016/1/18 16:30:36</dModifyDate>
+    <IsExportPoint>False</IsExportPoint>
+    <tPropertys>
+    </tPropertys>
+    <cformID>
+    </cformID>
+    <BEKEY>UFIDA.U9.Cust.JSDY.BarCode.ProductBarCode</BEKEY>
+    <iUserDefine>0</iUserDefine>
+    <mDefaultTemplate>
+    </mDefaultTemplate>
+    <mIndividuation>
+    </mIndividuation>
+  </UBF_MD_ASRPT_Category>
+  <UBF_MD_ASRPT_Category>
+    <ID>904e64e0-c384-46d5-a2bc-4b7841d3384e</ID>
+    <cName>JSDY</cName>
+    <cDescription>
+    </cDescription>
+    <uParent>
+    </uParent>
+    <iType>0</iType>
+    <iLevel>0</iLevel>
+    <iVisible>1</iVisible>
+    <cCreateBy>Administrator</cCreateBy>
+    <dCreateDate>2016/1/18 15:49:23</dCreateDate>
+    <dModifyDate>2016/1/18 15:49:23</dModifyDate>
+    <IsExportPoint>True</IsExportPoint>
+    <tPropertys>
+    </tPropertys>
+    <cformID>
+    </cformID>
+    <BEKEY>
+    </BEKEY>
+    <iUserDefine>0</iUserDefine>
+    <mDefaultTemplate>
+    </mDefaultTemplate>
+    <mIndividuation>
+    </mIndividuation>
+  </UBF_MD_ASRPT_Category>
+</UBF_MD_ASRPT_Categorys>

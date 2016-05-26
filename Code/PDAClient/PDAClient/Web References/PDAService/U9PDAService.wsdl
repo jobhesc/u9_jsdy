@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="LoginValidate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginValidateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginValidateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePasswordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsNeedUpdateVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsNeedUpdateVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsNeedUpdateVersionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPatchDownloads">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPatchDownloadsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPatchDownloadsResult" type="tns:ArrayOfVersionItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfVersionItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VersionItem" nillable="true" type="tns:VersionItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VersionItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Version" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DownloadFile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InstallStyle" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryUserInfoResult" type="tns:UserInfoDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserInfoDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryOrgInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryOrgInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryOrgInfoResult" type="tns:ArrayOfOrgInfoDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOrgInfoDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OrgInfoDTO" nillable="true" type="tns:OrgInfoDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OrgInfoDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OrgID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrgCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrgName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryCompleteApplyDocInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="orgID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="barCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryCompleteApplyDocInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryCompleteApplyDocInfoResult" type="tns:ArrayOfCompleteApplyDocDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCompleteApplyDocDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CompleteApplyDocDTO" nillable="true" type="tns:CompleteApplyDocDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CompleteApplyDocDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MO" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="MoDocNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ItemID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemSPECS" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompleteApplyDocID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompleteApplyLineID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SegLength" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Count" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalLength" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryShipPlanDocInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="orgID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="barCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryShipPlanDocInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryShipPlanDocInfoResult" type="tns:ArrayOfShipPlanDocDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfShipPlanDocDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ShipPlanDocDTO" nillable="true" type="tns:ShipPlanDocDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ShipPlanDocDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ItemID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemSPECS" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShipPlanID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShipPlanLineID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SegLength" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Count" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalLength" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryBarCodeInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="orgID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="barCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryBarCodeInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryBarCodeInfoResult" type="tns:BarCodeInfoDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BarCodeInfoDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ItemID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemSPECS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemCheckStandard" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActualLength" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="QcOperatorID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="QcOperatorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddInvCheckBarCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importDTOs" type="tns:ArrayOfInvCheckBarCodeImportDTO" />
+            <s:element minOccurs="0" maxOccurs="1" name="context" type="tns:LoginContext" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInvCheckBarCodeImportDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InvCheckBarCodeImportDTO" nillable="true" type="tns:InvCheckBarCodeImportDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InvCheckBarCodeImportDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ItemID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrgID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Qty" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScanDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ScanPerson" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LoginContext">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OrgID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddInvCheckBarCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddInvCheckBarCodesResult" type="tns:ArrayOfLong" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLong">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="long" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddProductBarCodesByCompleteApply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importDTOs" type="tns:ArrayOfProductBarCodeImportDTO" />
+            <s:element minOccurs="0" maxOccurs="1" name="context" type="tns:LoginContext" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProductBarCodeImportDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductBarCodeImportDTO" nillable="true" type="tns:ProductBarCodeImportDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductBarCodeImportDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ItemID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrgID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Qty" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScanDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ScanPerson" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="QcOperatorID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DocID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DocLineID" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddProductBarCodesByCompleteApplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddProductBarCodesByCompleteApplyResult" type="tns:ArrayOfLong" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddProductBarCodesByShip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importDTOs" type="tns:ArrayOfProductBarCodeImportDTO" />
+            <s:element minOccurs="0" maxOccurs="1" name="context" type="tns:LoginContext" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddProductBarCodesByShipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddProductBarCodesByShipResult" type="tns:ArrayOfLong" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginValidateSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginValidate" />
+  </wsdl:message>
+  <wsdl:message name="LoginValidateSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginValidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsNeedUpdateVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:IsNeedUpdateVersion" />
+  </wsdl:message>
+  <wsdl:message name="IsNeedUpdateVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:IsNeedUpdateVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPatchDownloadsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPatchDownloads" />
+  </wsdl:message>
+  <wsdl:message name="GetPatchDownloadsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPatchDownloadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="QueryUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryOrgInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryOrgInfo" />
+  </wsdl:message>
+  <wsdl:message name="QueryOrgInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryOrgInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryCompleteApplyDocInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryCompleteApplyDocInfo" />
+  </wsdl:message>
+  <wsdl:message name="QueryCompleteApplyDocInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryCompleteApplyDocInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryShipPlanDocInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryShipPlanDocInfo" />
+  </wsdl:message>
+  <wsdl:message name="QueryShipPlanDocInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryShipPlanDocInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryBarCodeInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryBarCodeInfo" />
+  </wsdl:message>
+  <wsdl:message name="QueryBarCodeInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryBarCodeInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddInvCheckBarCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:AddInvCheckBarCodes" />
+  </wsdl:message>
+  <wsdl:message name="AddInvCheckBarCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:AddInvCheckBarCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddProductBarCodesByCompleteApplySoapIn">
+    <wsdl:part name="parameters" element="tns:AddProductBarCodesByCompleteApply" />
+  </wsdl:message>
+  <wsdl:message name="AddProductBarCodesByCompleteApplySoapOut">
+    <wsdl:part name="parameters" element="tns:AddProductBarCodesByCompleteApplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddProductBarCodesByShipSoapIn">
+    <wsdl:part name="parameters" element="tns:AddProductBarCodesByShip" />
+  </wsdl:message>
+  <wsdl:message name="AddProductBarCodesByShipSoapOut">
+    <wsdl:part name="parameters" element="tns:AddProductBarCodesByShipResponse" />
+  </wsdl:message>
+  <wsdl:portType name="U9PDAServiceSoap">
+    <wsdl:operation name="LoginValidate">
+      <wsdl:input message="tns:LoginValidateSoapIn" />
+      <wsdl:output message="tns:LoginValidateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <wsdl:input message="tns:ChangePasswordSoapIn" />
+      <wsdl:output message="tns:ChangePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsNeedUpdateVersion">
+      <wsdl:input message="tns:IsNeedUpdateVersionSoapIn" />
+      <wsdl:output message="tns:IsNeedUpdateVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatchDownloads">
+      <wsdl:input message="tns:GetPatchDownloadsSoapIn" />
+      <wsdl:output message="tns:GetPatchDownloadsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryUserInfo">
+      <wsdl:input message="tns:QueryUserInfoSoapIn" />
+      <wsdl:output message="tns:QueryUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryOrgInfo">
+      <wsdl:input message="tns:QueryOrgInfoSoapIn" />
+      <wsdl:output message="tns:QueryOrgInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryCompleteApplyDocInfo">
+      <wsdl:input message="tns:QueryCompleteApplyDocInfoSoapIn" />
+      <wsdl:output message="tns:QueryCompleteApplyDocInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryShipPlanDocInfo">
+      <wsdl:input message="tns:QueryShipPlanDocInfoSoapIn" />
+      <wsdl:output message="tns:QueryShipPlanDocInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryBarCodeInfo">
+      <wsdl:input message="tns:QueryBarCodeInfoSoapIn" />
+      <wsdl:output message="tns:QueryBarCodeInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddInvCheckBarCodes">
+      <wsdl:input message="tns:AddInvCheckBarCodesSoapIn" />
+      <wsdl:output message="tns:AddInvCheckBarCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddProductBarCodesByCompleteApply">
+      <wsdl:input message="tns:AddProductBarCodesByCompleteApplySoapIn" />
+      <wsdl:output message="tns:AddProductBarCodesByCompleteApplySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddProductBarCodesByShip">
+      <wsdl:input message="tns:AddProductBarCodesByShipSoapIn" />
+      <wsdl:output message="tns:AddProductBarCodesByShipSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="U9PDAServiceSoap" type="tns:U9PDAServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoginValidate">
+      <soap:operation soapAction="http://tempuri.org/LoginValidate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap:operation soapAction="http://tempuri.org/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNeedUpdateVersion">
+      <soap:operation soapAction="http://tempuri.org/IsNeedUpdateVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatchDownloads">
+      <soap:operation soapAction="http://tempuri.org/GetPatchDownloads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUserInfo">
+      <soap:operation soapAction="http://tempuri.org/QueryUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryOrgInfo">
+      <soap:operation soapAction="http://tempuri.org/QueryOrgInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCompleteApplyDocInfo">
+      <soap:operation soapAction="http://tempuri.org/QueryCompleteApplyDocInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryShipPlanDocInfo">
+      <soap:operation soapAction="http://tempuri.org/QueryShipPlanDocInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBarCodeInfo">
+      <soap:operation soapAction="http://tempuri.org/QueryBarCodeInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddInvCheckBarCodes">
+      <soap:operation soapAction="http://tempuri.org/AddInvCheckBarCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddProductBarCodesByCompleteApply">
+      <soap:operation soapAction="http://tempuri.org/AddProductBarCodesByCompleteApply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddProductBarCodesByShip">
+      <soap:operation soapAction="http://tempuri.org/AddProductBarCodesByShip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="U9PDAServiceSoap12" type="tns:U9PDAServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoginValidate">
+      <soap12:operation soapAction="http://tempuri.org/LoginValidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap12:operation soapAction="http://tempuri.org/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNeedUpdateVersion">
+      <soap12:operation soapAction="http://tempuri.org/IsNeedUpdateVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatchDownloads">
+      <soap12:operation soapAction="http://tempuri.org/GetPatchDownloads" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUserInfo">
+      <soap12:operation soapAction="http://tempuri.org/QueryUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryOrgInfo">
+      <soap12:operation soapAction="http://tempuri.org/QueryOrgInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCompleteApplyDocInfo">
+      <soap12:operation soapAction="http://tempuri.org/QueryCompleteApplyDocInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryShipPlanDocInfo">
+      <soap12:operation soapAction="http://tempuri.org/QueryShipPlanDocInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBarCodeInfo">
+      <soap12:operation soapAction="http://tempuri.org/QueryBarCodeInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddInvCheckBarCodes">
+      <soap12:operation soapAction="http://tempuri.org/AddInvCheckBarCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddProductBarCodesByCompleteApply">
+      <soap12:operation soapAction="http://tempuri.org/AddProductBarCodesByCompleteApply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddProductBarCodesByShip">
+      <soap12:operation soapAction="http://tempuri.org/AddProductBarCodesByShip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="U9PDAService">
+    <wsdl:port name="U9PDAServiceSoap" binding="tns:U9PDAServiceSoap">
+      <soap:address location="http://localhost/PDAService/U9PDAService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="U9PDAServiceSoap12" binding="tns:U9PDAServiceSoap12">
+      <soap12:address location="http://localhost/PDAService/U9PDAService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

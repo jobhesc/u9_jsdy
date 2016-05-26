@@ -1,0 +1,396 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25C592CF-B1EA-4B25-BF0C-702144A17180}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PDAClient</RootNamespace>
+    <AssemblyName>PDAClient</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.00</OSVersion>
+    <DeployDirSuffix>Application\PDAClient</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>main.ico</ApplicationIcon>
+    <DeployDirPrefix>\</DeployDirPrefix>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>installs\pdaclient\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="Symbol, Version=2.5.0.3, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
+    <Reference Include="Symbol.Barcode2, Version=2.7.0.4, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataGrid" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\CompleteApplyBarCodeDataSet.cs">
+      <DependentUpon>CompleteApplyBarCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CompleteApplyBarCodeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompleteApplyBarCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvCheckBarCodeDataSet.cs">
+      <DependentUpon>InvCheckBarCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvCheckBarCodeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvCheckBarCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LoginInfoDataSet.cs">
+      <DependentUpon>LoginInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LoginInfoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OptionsDataSet.cs">
+      <DependentUpon>OptionsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OptionsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OptionsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ShipBarCodeDataSet.cs">
+      <DependentUpon>ShipBarCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ShipBarCodeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShipBarCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SysOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SysOptionsForm.Designer.cs">
+      <DependentUpon>SysOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScanInvCheckBarCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScanInvCheckBarCodeForm.Designer.cs">
+      <DependentUpon>ScanInvCheckBarCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScanCompleteApplyBarCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScanCompleteApplyBarCodeForm.Designer.cs">
+      <DependentUpon>ScanCompleteApplyBarCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScanShipBarCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScanShipBarCodeForm.Designer.cs">
+      <DependentUpon>ScanShipBarCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ChangePasswordForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SysOptionsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SysOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Utils\PDAContext.cs" />
+    <Compile Include="Utils\ServiceAgent.cs" />
+    <Compile Include="Utils\VersionHelper.cs" />
+    <Compile Include="Web References\PDAService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/PDAService/U9PDAService.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\PDAService\</RelPath>
+      <UpdateFromURL>http://localhost/PDAService/U9PDAService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\PDAService\U9PDAService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dllregister.exe" />
+    <Content Include="installs\dotnet\GAC_CustomMarshalers_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_Microsoft.VisualBasic_v8_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_Microsoft.WindowsCE.Forms_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_Microsoft.WindowsMobile.DirectX_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_mscorlib_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_System.Data_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_System.Drawing_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_System.Messaging_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_System.Net.IrDA_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_System.Web.Services_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_System.Windows.Forms.DataGrid_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_System.Windows.Forms_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_System.Xml_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\GAC_System_v2_0_0_0_cneutral_1.dll" />
+    <Content Include="installs\dotnet\Microsoft.VisualBasic.SR.dll" />
+    <Content Include="installs\dotnet\Microsoft.VisualBasic.SR.Resources.zh-CHS.dll" />
+    <Content Include="installs\dotnet\System.SR.dll" />
+    <Content Include="installs\dotnet\System.SR.Resources.zh-CHS.dll" />
+    <Content Include="installs\sqlce\isqlw35.exe" />
+    <Content Include="installs\sqlce\sqlceca35.dll" />
+    <Content Include="installs\sqlce\sqlcecompact35.dll" />
+    <Content Include="installs\sqlce\sqlceer35CN.dll" />
+    <Content Include="installs\sqlce\sqlceme35.dll" />
+    <Content Include="installs\sqlce\sqlceoledb35.dll" />
+    <Content Include="installs\sqlce\sqlceqp35.dll" />
+    <Content Include="installs\sqlce\sqlcese35.dll" />
+    <Content Include="installs\symbol\SymbolSetupDLL.dll" />
+    <Content Include="libs\NETCFv2.wce5.armv4i.cab" />
+    <Content Include="libs\sqlce.dev.CHS.wce5.armv4i.CAB">
+    </Content>
+    <Content Include="libs\sqlce.repl.wce5.armv4i.CAB">
+    </Content>
+    <Content Include="libs\sqlce.wce5.armv4i.CAB">
+    </Content>
+    <Content Include="libs\symbol.all.arm.cab" />
+    <Content Include="libs\System_SR_CHS.CAB" />
+    <Content Include="PDABarCode.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Forms\BaseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScanInvCheckBarCodeForm.resx">
+      <DependentUpon>ScanInvCheckBarCodeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScanCompleteApplyBarCodeForm.resx">
+      <DependentUpon>ScanCompleteApplyBarCodeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScanShipBarCodeForm.resx">
+      <DependentUpon>ScanShipBarCodeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.ico">
+    </EmbeddedResource>
+    <None Include="DesignTimeAttributes.xmta" />
+    <None Include="Entities\CompleteApplyBarCodeDataSet.xsc">
+      <DependentUpon>CompleteApplyBarCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CompleteApplyBarCodeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CompleteApplyBarCodeDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Entities\CompleteApplyBarCodeDataSet.xss">
+      <DependentUpon>CompleteApplyBarCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InvCheckBarCodeDataSet.xsc">
+      <DependentUpon>InvCheckBarCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InvCheckBarCodeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvCheckBarCodeDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Entities\InvCheckBarCodeDataSet.xss">
+      <DependentUpon>InvCheckBarCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LoginInfoDataSet.xsc">
+      <DependentUpon>LoginInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LoginInfoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginInfoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Entities\LoginInfoDataSet.xss">
+      <DependentUpon>LoginInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OptionsDataSet.xsc">
+      <DependentUpon>OptionsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OptionsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OptionsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Entities\OptionsDataSet.xss">
+      <DependentUpon>OptionsDataSet.xsd</DependentUpon>
+    </None>
+    <Content Include="version.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Entities\ShipBarCodeDataSet.xsc">
+      <DependentUpon>ShipBarCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ShipBarCodeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShipBarCodeDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Entities\ShipBarCodeDataSet.xss">
+      <DependentUpon>ShipBarCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="installs\dotnet.cpy" />
+    <None Include="installs\dotnet\System.SR.2.0.CHS.gac" />
+    <None Include="installs\pdaclient.cpy" />
+    <None Include="installs\sqlce.cpy" />
+    <None Include="installs\symbol.cpy" />
+    <None Include="installs\symbol\Symbol Managed Class Libraries 2.7.GAC" />
+    <None Include="Web References\PDAService\BarCodeInfoDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAService\CompleteApplyDocDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAService\OrgInfoDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PDAService\ShipPlanDocDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAService\U9PDAService.disco" />
+    <None Include="Web References\PDAService\UserInfoDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAService\VersionItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <Content Include="条码系统.lnk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PDAUpdate\PDAUpdate.csproj">
+      <Project>{9D451D11-A3D9-4DB8-B0C8-996B5A5DEFA8}</Project>
+      <Name>PDAUpdate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PDAUtils\PDAUtils.csproj">
+      <Project>{2F1ADF5E-4BF1-4A84-B794-7F0A6299F796}</Project>
+      <Name>PDAUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v3.5'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+</Project>

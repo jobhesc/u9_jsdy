@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project id="3f8d8698-595e-4e10-8b96-d874b3389f05" name="BarCodeQry" displayName="BarCodeQry" description="" help="" type="" assemblyName="BarCodeQry" mapProject="" resourceName="" projectVersion="Normal">
+  <Imports>
+    <Import id="f902d60f-d85b-4f4b-8f94-585b4d7e316c" name="BarCodeUI" displayName="BarCodeUI" description="" help="" componentid="842e7a32-08c6-4a8c-89ca-c652ae44fcb5" path="..\BarCodeUI\BarCodeUI.ubfuiproj" type="UI" isRuntime="False" />
+  </Imports>
+  <SourceControl />
+  <ItemGroup>
+    <Item id="119e6f62-5059-45c4-b3fd-63b1fd9ff718" name="CompleteApplyBarCodeQry.ubfquery" displayName="CompleteApplyBarCodeQry.ubfquery" description="" help="" include="CompleteApplyBarCodeQry.ubfquery" type="" />
+    <Item id="4cb6ac52-08bd-4bd0-9bab-28e1864e15f0" name="ProductBarCodeQry.ubfquery" displayName="ProductBarCodeQry.ubfquery" description="" help="" include="ProductBarCodeQry.ubfquery" type="" />
+    <Item id="d9b9c7e0-285f-4190-9b19-52d3c8cf0032" name="CheckBarCodeQry.ubfquery" displayName="CheckBarCodeQry.ubfquery" description="" help="" include="CheckBarCodeQry.ubfquery" type="" />
+  </ItemGroup>
+</Project>

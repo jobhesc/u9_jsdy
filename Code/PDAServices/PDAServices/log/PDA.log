@@ -1,0 +1,2 @@
+[4 ][HESC\Administrator][19:20:12][DEBUG][Utils.PDALog]-执行sql:select Password from Base_User where Code='dddd'
+[4 ][HESC\Administrator][19:20:12][DEBUG][Utils.PDALog]-创建返回一个新的数据库连接对象SqlConnection.ConnectionString:User Id=sa;Password=123456;Data Source=10.0.0.100;Initial Catalog=ceshi007;packet size=4096;Max Pool size=100;Connection Timeout=900;persist security info=True;MultipleActiveResultSets=true;.

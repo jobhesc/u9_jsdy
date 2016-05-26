@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PDAService>
+  <!--数据库连接字符串-->
+  <connectionString>User Id=sa;Password=ufida123;Data Source=.;Initial Catalog=jsdy;packet size=4096;Max Pool size=100;Connection Timeout=900;persist security info=True;MultipleActiveResultSets=true;</connectionString>
+
+  <ServiceContext>
+    <EnterpriseID>001</EnterpriseID>
+    <EnterpriseName>江苏帝一</EnterpriseName>
+  </ServiceContext>
+  <PatchVersion>
+    <Version>1.0.0.1</Version>
+    <DownloadFiles>
+      <DownloadFile mode="install"></DownloadFile>
+      <DownloadFile mode="update"></DownloadFile>
+    </DownloadFiles>
+  </PatchVersion>
+</PDAService>

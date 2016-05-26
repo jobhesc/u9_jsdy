@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project id="27daeb13-a054-4807-b395-7c5328968bd3" name="BarCodeSV" displayName="BarCodeSV" description="" help="" type="SV" assemblyName="UFIDA.U9.Cust.JSDY.BarCodeSV" mapProject="" resourceName="" projectVersion="Normal">
+  <Imports>
+    <Import id="f93ff38a-b208-4d39-a49d-3162a8c98b8e" name="BaseBE" displayName="BaseBE" description="" help="" componentid="2402fd32-810a-4130-811d-f1e6183a5a26" path="..\..\..\..\U9.VOB.Product.Metadata\UBF\UFIDA.U9.Base.BaseBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="ba4c5e48-fab4-4dd1-b237-1da126d7b742" name="CBO_PubBE" displayName="CBO_PubBE" description="" help="" componentid="fe8dc9a2-365d-41c0-8f48-c02abb016910" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.CBO.PubBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="5219f8cc-e648-4b75-95f1-3fc27c5996fa" name="BarCodeBE" displayName="BarCodeBE" description="" help="" componentid="f0a48417-43a7-4455-a294-a2f02d332386" path="..\..\..\..\U9.VOB.Product.Metadata\Unconfiged\Metadata\UFIDA.U9.Cust.JSDY.BarCodeBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="135a76fc-55d4-42a1-af59-1c2bc7b35310" name="LotBE" displayName="LotBE" description="" help="" componentid="84da9a87-895d-4954-a168-832b2316ee21" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.Lot.LotBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="09d2ae84-aa36-4a17-aabf-454d5ccfcbc5" name="LotSV" displayName="LotSV" description="" help="" componentid="d2090b56-0171-4d92-b006-2929ccc576eb" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.Lot.LotSV.MetaData.dll" type="SV" isRuntime="True" />
+    <Import id="5fb3f87a-e68c-4290-b9ac-ee1756b688d8" name="CBO_SCMBE" displayName="CBO_SCMBE" description="" help="" componentid="b6f24ded-125b-492b-8292-c000f06ad453" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.CBO.SCMBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="df15c323-f8ad-4e9d-81cd-a204452efd62" name="CompleteBE" displayName="CompleteBE" description="" help="" componentid="24e64e17-c906-4486-9978-fbce6f2570eb" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.Complete.CompleteBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="7249eda6-323d-40d5-88e4-bfa1c6bb846c" name="CompleteBP" displayName="CompleteBP" description="" help="" componentid="42261b78-4642-42db-a4bd-f078b8749cc4" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.Complete.CompleteBP.MetaData.dll" type="BP" isRuntime="True" />
+    <Import id="b8a862e6-3efd-4625-8653-e8f6cede90eb" name="MOBE" displayName="MOBE" description="" help="" componentid="3f6884f2-49ff-4582-9f56-f86246020dbe" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.MO.MOBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="5fa41e76-477d-4cb0-9b6f-1e66e2f169c0" name="SMBP" displayName="SMBP" description="" help="" componentid="c49326e3-d501-4ec3-a16d-50ab2678e6bf" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.SM.SMBP.MetaData.dll" type="BP" isRuntime="True" />
+    <Import id="b09d4956-13bb-48dd-b28b-eae609a6490b" name="SMBE" displayName="SMBE" description="" help="" componentid="c901c367-9f35-425c-812e-9a9966cb21a3" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.SM.SMBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="cb3871b3-d5ba-4916-bba0-d69f78565a20" name="MOSV" displayName="MOSV" description="" help="" componentid="473db495-6583-4423-9caa-f169891ef7aa" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.ISV.MO.MOSV.MetaData.dll" type="SV" isRuntime="True" />
+    <Import id="e2140f24-96a2-407b-9a56-10d96c135cfd" name="PMBP" displayName="PMBP" description="" help="" componentid="08f58323-555d-446c-a5c3-b42842ecb19e" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.PM.PMBP.MetaData.dll" type="BP" isRuntime="True" />
+    <Import id="76228a60-a80c-4c4d-b443-e31a2f4de116" name="PMBE" displayName="PMBE" description="" help="" componentid="40c924ae-393f-4adb-9176-e5e26110633d" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.PM.PMBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="c9358c16-12bc-4bd8-91db-40b50a1d2c73" name="BaseBP" displayName="BaseBP" description="" help="" componentid="eca02186-a272-4ed5-802e-d7a2d663d6d1" path="..\..\..\..\U9.VOB.Product.Metadata\UBF\UFIDA.U9.Base.BaseBP.MetaData.dll" type="BP" isRuntime="True" />
+    <Import id="bdb1519b-e4db-4497-971e-46a8570d1328" name="InvDocBE" displayName="InvDocBE" description="" help="" componentid="bedae155-1aeb-4d49-b2c3-7ce5233e7ef4" path="..\..\..\..\U9.VOB.Product.Metadata\App\UFIDA.U9.InvDoc.InvDocBE.MetaData.dll" type="BE" isRuntime="True" />
+  </Imports>
+  <SourceControl />
+  <ItemGroup>
+    <Item id="89ae4d65-6892-453b-ae0a-9d9001352893" name="BarCodeSV.ubfsvr" displayName="BarCodeSV.ubfsvr" description="" help="" include="BarCodeSV.ubfsvr" type="BE" />
+  </ItemGroup>
+</Project>

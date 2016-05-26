@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.serviceModel>
+    <services>
+               
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.GetOperatorsForLoginUserStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IGetOperatorsForLoginUser"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.GetBaseBarCodeStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IGetBaseBarCode"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.GetBarCodeFlowNoStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IGetBarCodeFlowNo"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.ExecuteSqlStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IExecuteSql"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.GetCompleteApplyBarCodePrintDataStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IGetCompleteApplyBarCodePrintData"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.GetProductBarCodePrintDataStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IGetProductBarCodePrintData"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.QueryWhQohStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IQueryWhQoh"
+                  binding="basicHttpBinding" />
+
+	</service>
+ 
+    </services>
+</system.serviceModel>
+</configuration>

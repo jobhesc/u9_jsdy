@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.serviceModel>
+    <services>
+               
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.GenCheckBarCodesStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IGenCheckBarCodes"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.GenProductBarCodesByCompleteApplyStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IGenProductBarCodesByCompleteApply"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.GenProductBarCodesByRMAStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IGenProductBarCodesByRMA"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Cust.JSDY.BarCode.GenProductBarCodesByShipStub">
+        <endpoint contract="UFIDA.U9.Cust.JSDY.BarCode.IGenProductBarCodesByShip"
+                  binding="basicHttpBinding" />
+
+	</service>
+ 
+    </services>
+</system.serviceModel>
+</configuration>
